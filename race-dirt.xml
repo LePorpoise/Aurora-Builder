@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Dirt</name>
+        <description>5e homebrew</description>
+        <author url="https://www.dandwiki.com/wiki/Dirt_(5e_Race)">D&amp;D Wiki</author>
+        <update version="0.0.1">
+            <file name="race-dirt.xml" url="" />
+        </update>
+    </info>
+
+    <element name="Dirt" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_DIRT">
+        <description>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Sentient dirt is just a little mound of dirt that no matter what can not be separated. Sentient dirt has no genders because... it's dirt. Sentient dirt can't move by itself because... it's dirt. Sentient dirt has no facial features or limbs because... it's dirt. But despite being dirt, Sentient dirt are proffesional Fortnite players.</p>
+            <h4>HISTORY</h4>
+            <p>This race of sentient dirt appears when a insanely powerful wizard misfires a very powerful spell of theirs and that spell hits a small mound of dirt... this happens rarely though which means sentient dirt is sometimes considered legendary.</p>
+            <h4>SOCIETY</h4>
+            <p>There isn't that much of a society for sentient dirts because of their rarity, but if two sentient dirts were to meet each other they would battle to the death. </p>
+            <h4>DIRT NAMES</h4>
+            <p>Sentient dirt has no need for names.</p>
+            <p>
+                <b>Male: </b>None<br/>
+                <b>Female: </b>None<br/>          
+            </p>
+            <h4>DIRT TRAITS</h4>
+            <p>Literally sentient dirt.</p>
+                <p>
+                    <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 5.<br />
+                    <span class="feature">Age.</span>They can live forever, and they don't age at all.<br />
+                    <span class="feature">Alignment.</span>Sentient dirt are always lawful neutral.<br />
+                    <span class="feature">Size.</span>Small.<br />
+                    <span class="feature">Speed.</span>Your base walking speed is 0 feet so to move you must be carried.<br />
+                    <span class="feature">Dirt has no eyes or ears.</span>You are blind and deaf, you have disadvantage on any check that is related to sight or hearing.<br />
+                    <span class="feature">Magical Dirtelepathy.</span>You can telepathically communicate with any creature with an Intelligence above 3 that knows at least 1 language within 100 ft of you.<br />
+                    <span class="feature">Damage Immunity.</span>You are immune to lightning damage.<br />
+                    <span class="feature">Connection to the ground.</span>You have a deep connection with the ground allowing you to know where anything that is in contact with the ground within 100ft of you is.<br />
+                    <span class="feature">Dirt has no limbs.</span>You can't hold anything unless some one else sticks it in you, but you still can't move that object by yourself.<br />
+                    <span class="feature">Magical Soil.</span>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.<br />
+                    <span class="feature">Languages.</span>Sentient dirt can understand all languages but can't speak or read.<br />
+                </p>
+        </description>
+        <setters>
+            <set name="names" type="male">None</set>
+            <set name="names" type="female">None</set>
+            <set name="names-format">$(name)</set>
+            <set name="height" modifier="1d4">1'2"</set>
+            <set name="weight" modifier="(none)">17</set>
+        </setters>
+        <sheet display="false">
+            <description>"Through out history there has been something that we have always known, that thing is dirt, it has contributed to our survival but it is something we usually forget even exists." -A Wise Man </description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="5" />
+            <select type="Ability Score Improvement" name="Dirt" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_INTELLIGENCE" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="Speed" value="0" bonus="base" />
+        </rules>
+    </element>
+    <element name="Dirt has no eyes or ears" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_DIRT_HAS_NO_EYES_OR_EARS">
+        <sheet>
+            <description>You are blind and deaf, you have disadvantage on any check that is related to sight or hearing.</description>
+        </sheet>
+    </element>
+    <element name="Magical Dirtelepathy" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_MAGICAL_DIRTELEPATHY">
+        <sheet>
+            <description>You can telepathically communicate with any creature with an Intelligence above 3 that knows at least 1 language within 100 ft of you.</description>
+        </sheet>
+    </element>
+    <element name="Damage Immunity" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_DAMAGE_IMMUNITY">
+        <sheet>
+            <description>You are immune to lightning damage.</description>
+        </sheet>
+    </element>
+    <element name="Connection to the ground" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_CONNECTION_TO_GROUND">
+        <sheet>
+            <description>You have a deep connection with the ground allowing you to know where anything that is in contact with the ground within 100ft of you is.</description>
+        </sheet>
+    </element>
+    <element name="Dirt has no limbs" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_HAS_NO_LIMBS">
+        <sheet>
+            <description>You can't hold anything unless some one else sticks it in you, but you still can't move that object by yourself.</description>
+        </sheet>
+    </element>
+    <element name="Magical Soil" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_HAS_NO_LIMBS">
+        <sheet>
+            <description>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.</description>
+        </sheet>
+    </element>
+</elements>
