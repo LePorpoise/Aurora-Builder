@@ -120,7 +120,7 @@
       </description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Virtuous Fire" supports="Virtuous Fire" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE"/>
+      <grant type="Class Feature" name="Virtuous Fire" supports="Virtuous Fire" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE"/>
     </rules>
   </element>
   
@@ -313,8 +313,6 @@
     <sheet>
       <description>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -326,8 +324,6 @@
     <sheet>
       <description>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -339,8 +335,6 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -352,8 +346,6 @@
     <sheet>
       <description>Longbow range increases to 600 feet without imposing disadvantage.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -365,8 +357,6 @@
     <sheet>
       <description>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
   
@@ -378,8 +368,6 @@
     <sheet>
       <description>When a creature misses an attack roll, you may make an additional save to negate any status effects.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -391,8 +379,6 @@
     <sheet>
       <description>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
@@ -404,8 +390,6 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="7" />
     <rules />
   </element>
 
@@ -417,8 +401,6 @@
     <sheet>
       <description>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="10" />
     <rules />
   </element>
 
@@ -430,8 +412,6 @@
     <sheet>
       <description>Shield of Courage now may effect up to 4 creatures of your choice.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="10" />
     <rules />
   </element>
 
@@ -443,8 +423,6 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="12" requirements="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOT'S_AGGRESSION" />
     <rules />
   </element>
   
@@ -456,8 +434,6 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="12" requirements="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION" />
     <rules />
   </element>
 
@@ -469,8 +445,6 @@
     <sheet>
       <description>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="20" />
     <rules />
   </element>
 
@@ -485,8 +459,6 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. At level 3 this is 1d6, at level 20 this is 10d6. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
     <rules />
   </element>
 
@@ -498,8 +470,6 @@
     <sheet>
       <description>Cast Cure Wounds on yourself at a level equal to your Charisma modifier or lower, and imbue light into a 5 foot radius. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
     <rules />
   </element>
 
@@ -511,8 +481,6 @@
     <sheet>
       <description>Lay a trap down in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. When the trap is activated, allies within 10 feet impose disadvantage on the next creature that makes an attack roll against them. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
     <rules />
   </element>
 
@@ -524,8 +492,6 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap with the effects of Disguise Self or Invisibility are revealed in their true form. Any attack roll made against a creature within this trap gains advantage. Revealing effect will not change creatures under the effect of Polymorph. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
     <rules />
   </element>
 
@@ -537,8 +503,6 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that cross into and out of melee range must make a Dexterity save higher than 8 + proficiency + Charisma or take damage equal to half your Dragonhunter level x a d6. On a failed save, the creature is also knocked prone. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
     <rules />
   </element>
 
@@ -550,8 +514,6 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter a 10 foot radius must make a Dexterity save above 10 or be pulled into the center of the trap. Creatures that enter the 5 foot radius must make a Dexterity save above 8 + proficiency + Charisma or be pulled into the center. Creatures that are pulled in are grappled and prone, and may make a new save each turn to break free. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="18" />
     <rules />
   </element>
 
