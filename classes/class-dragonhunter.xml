@@ -45,7 +45,7 @@
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAPS" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_ASI" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SPEAR_OF_JUSTICE" />
-      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_WINGS_OFR_RESOLVE" />
+      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_WINGS_OF_RESOLVE" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_PUNCTURE_SHOT" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRUE_SHOT" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_DEFLECTING_SHOT" />
@@ -75,7 +75,7 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
 
-      <select type="Proficiency" name="Skill Proficiency (Dragonhunter)" supports="Skill, Dragonhunter" number="2" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
+      <select type="Proficiency" name="Skill Proficiency (Dragonhunter)" supports="Skill, Dragonhunter, Paladin" number="2" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
 
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_FIGHTING_STYLE" level="1" />
@@ -113,12 +113,6 @@
       <p>Starting at 1st level, you have unlocked virtues so pure that you can create blue flame at will. You can cast Produce Flame at will.</p>
       <p class="indent">Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.</p>
     </description>
-    <sheet>
-      <description>
-       Starting at 1st level, you have unlocked virtues so pure that you can create blue flame at will. You can cast Produce Flame at will. 
-      Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.
-      </description>
-    </sheet>
     <rules>
       <grant type="Class Feature" name="Virtuous Fire" supports="Virtuous Fire" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE"/>
     </rules>
@@ -259,7 +253,7 @@
     </sheet>
   </element>
 
-  <element name="Hunter's Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUINTER'S_WARD">
+  <element name="Hunter's Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTER'S_WARD">
     <description>
       <p>At 20th level, you gain the ability to fire a magical arrow skyward. At any point within 60 feet, create a 20 foot long and 20 foot high barrier of energy. Creatures that attempt to pass through this barrier must succeed on a Strength save above 8 + proficiency + Charisma. On a failed save, the creature takes 5d6 radiant damage and is pushed back 5 feet. On a success, the creature passes through the barrier, and takes half damage.  </p>
     </description>
@@ -267,6 +261,35 @@
       <description>At 20th level, you gain the ability to fire a magical arrow skyward. At any point within 60 feet, create a 20 foot long and 20 foot high barrier of energy. Creatures that attempt to pass through this barrier must succeed on a Strength save above 8 + proficiency + Charisma. On a failed save, the creature takes 5d6 radiant damage and is pushed back 5 feet. On a success, the creature passes through the barrier, and takes half damage.  </description>
     </sheet>
   </element>
+
+<element name="Virtuous Fire" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE">
+        <supports>Dragonhunter</supports>
+        <description>
+            <p> Starting at 1st level, you have unlocked virtues so pure that you can create blue flame at will.</p>
+            <p class="indent"> You can cast Produce Flame at will. Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.</p>
+            <p class="indent"> A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you.</p>
+            <p> Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8),  11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet>
+          <p class="indent"> You can cast Produce Flame at will. Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.</p>
+          <p class="indent"> A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you.</p>
+          <p> Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8),  11th level (3d8), and 17th level (4d8).</p>
+          </sheet>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">10 minutes</set>
+            <set name="range">self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
   <!-- Fighting Styles -->
   <element name="Archery" type="Class Feature" source="D&amp;D Wiki" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
@@ -516,7 +539,4 @@
     </sheet>
     <rules />
   </element>
-
-
-
 </elements>
