@@ -5,7 +5,7 @@
     <description>The Dragonhunter class from the Dungeons and Dragons Wiki.</description>
     <author url="https://www.dandwiki.com/wiki/Dragonhunter_(5e_Class)">Wizards of the Coast</author>
     <update version="0.1">
-      <file name="class-dragonhunter.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/classes/class-Dragonhunter.xml" />
+      <file name="class-dragonhunter.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/classes/class-dragonhunter.xml" />
     </update>
   </info>
 
@@ -45,12 +45,12 @@
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAPS" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_ASI" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SPEAR_OF_JUSTICE" />
-      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_WINGS_OFR_RESOLVE" />
+      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_WINGS_OF_RESOLVE" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_PUNCTURE_SHOT" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRUE_SHOT" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_DEFLECTING_SHOT" />
       <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SYMBOL_OF_ENERGY" />
-      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTER'S_WARD" />
+      <div element="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTERS_WARD" />
     </description>
     <sheet display="false">
       <description>A strong warrior fit to slay dragons.</description>
@@ -89,7 +89,7 @@
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRUE_SHOT" level="14" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_DEFLECTING_SHOT" level="15" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SYMBOL_OF_ENERGY" level="18" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTER'S_WARD" level="20" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTERS_WARD" level="20" />
     </rules>
     <multiclass id="ID_WIKI_MULTICLASS_DRAGONHUNTER">
       <prerequisite>Strength 13 and Charisma 13</prerequisite>
@@ -259,7 +259,7 @@
     </sheet>
   </element>
 
-  <element name="Hunter's Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUINTER'S_WARD">
+  <element name="Hunter's Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUINTERS_WARD">
     <description>
       <p>At 20th level, you gain the ability to fire a magical arrow skyward. At any point within 60 feet, create a 20 foot long and 20 foot high barrier of energy. Creatures that attempt to pass through this barrier must succeed on a Strength save above 8 + proficiency + Charisma. On a failed save, the creature takes 5d6 radiant damage and is pushed back 5 feet. On a success, the creature passes through the barrier, and takes half damage.  </p>
     </description>
@@ -305,7 +305,7 @@
   </element>
   
   <!-- Traits -->
-  <element name="Piercing Light" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PIERCING_LIGHT">
+  <element name="Piercing Light" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PIERCING_LIGHT">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</p>
@@ -313,12 +313,10 @@
     <sheet>
       <description>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Defender's Dogma" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDER'S_DOGMA">
+  <element name="Defender's Dogma" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDERS_DOGMA">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</p>
@@ -326,12 +324,10 @@
     <sheet>
       <description>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Zealot's Aggression" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOT'S_AGGRESSION">
+  <element name="Zealot's Aggression" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</p>
@@ -339,12 +335,10 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Pure of Sight" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
+  <element name="Pure of Sight" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Longbow range increases to 600 feet without imposing disadvantage.</p>
@@ -352,12 +346,10 @@
     <sheet>
       <description>Longbow range increases to 600 feet without imposing disadvantage.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Hunter's Recovery" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTER'S_RECOVERY">
+  <element name="Hunter's Recovery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</p>
@@ -365,12 +357,10 @@
     <sheet>
       <description>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
   
-  <element name="Hunter's Fortification" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTER'S_FORTIFICATION">
+  <element name="Hunter's Fortification" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When a creature misses an attack roll, you may make an additional save to negate any status effects.</p>
@@ -378,12 +368,10 @@
     <sheet>
       <description>When a creature misses an attack roll, you may make an additional save to negate any status effects.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Heavy Light" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
+  <element name="Heavy Light" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</p>
@@ -391,25 +379,21 @@
     <sheet>
       <description>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="2" />
     <rules />
   </element>
 
-  <element name="Soaring Devastation" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
+  <element name="Soaring Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</p>
     </description>
     <sheet>
       <description>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</description>
-    </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="7" />
+    </sheet
     <rules />
   </element>
 
-  <element name="Hunter's Determination" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTER'S_DETERMINATION">
+  <element name="Hunter's Determination" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</p>
@@ -417,12 +401,10 @@
     <sheet>
       <description>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="10" />
     <rules />
   </element>
 
-  <element name="Bulwark" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
+  <element name="Bulwark" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Shield of Courage now may effect up to 4 creatures of your choice.</p>
@@ -430,12 +412,10 @@
     <sheet>
       <description>Shield of Courage now may effect up to 4 creatures of your choice.</description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="10" />
     <rules />
   </element>
 
-  <element name="Zealot's Savagery" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOT'S_SAVAGERY">
+  <element name="Zealot's Savagery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</p>
@@ -444,11 +424,11 @@
       <description>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
     <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="12" requirements="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOT'S_AGGRESSION" />
+        <requirements>ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION, [level:10]</requirements>
     <rules />
   </element>
   
-  <element name="Holy Devastation" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
+  <element name="Holy Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </p>
@@ -461,7 +441,7 @@
     <rules />
   </element>
 
-  <element name="Big Game Hunter" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
+  <element name="Big Game Hunter" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </p>
@@ -516,7 +496,7 @@
     <rules />
   </element>
 
-  <element name="Light's Judgement" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHT'S_JUDGEMENT">
+  <element name="Light's Judgement" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHTS_JUDGEMENT">
     <supports>Maneuver, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap with the effects of Disguise Self or Invisibility are revealed in their true form. Any attack roll made against a creature within this trap gains advantage. Revealing effect will not change creatures under the effect of Polymorph. </p>
