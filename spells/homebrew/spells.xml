@@ -5,7 +5,7 @@
         <description>The Homebrew Spells from D&amp;D Wiki</description>
         <author url="https://www.dandwiki.com/wiki/Begone_Thot,_Variant_(5e_Spell)">April Fool's Page</author>
         <update version="0.1">
-            <file name="spells.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/Spells/spells.xml" />
+            <file name="spells.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/Spells/spells/homebrew/spells.xml" />
         </update>
     </info>
 
@@ -29,5 +29,9 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
+<<<<<<< HEAD
     </element>
+=======
+</element>
+>>>>>>> c4c72f67085ba1ac56447cebee764ba66603b68a
 </elements>
