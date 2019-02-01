@@ -313,7 +313,7 @@
     <sheet>
       <description>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Defender's Dogma" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDERS_DOGMA">
@@ -324,7 +324,7 @@
     <sheet>
       <description>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Zealot's Aggression" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
@@ -335,7 +335,7 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Pure of Sight" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
@@ -346,7 +346,7 @@
     <sheet>
       <description>Longbow range increases to 600 feet without imposing disadvantage.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Hunter's Recovery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
@@ -357,7 +357,7 @@
     <sheet>
       <description>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</description>
     </sheet>
-    <rules />
+    
   </element>
   
   <element name="Hunter's Fortification" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
@@ -368,7 +368,7 @@
     <sheet>
       <description>When a creature misses an attack roll, you may make an additional save to negate any status effects.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Heavy Light" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
@@ -379,7 +379,7 @@
     <sheet>
       <description>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Soaring Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
@@ -389,9 +389,9 @@
     </description>
     <sheet>
       <description>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</description>
-    </sheet
-    <rules />
-  </element>
+    </sheet>
+
+  </element>  
 
   <element name="Hunter's Determination" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
     <supports>Maneuver, Dragonhunter</supports>
@@ -401,7 +401,7 @@
     <sheet>
       <description>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Bulwark" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
@@ -412,7 +412,7 @@
     <sheet>
       <description>Shield of Courage now may effect up to 4 creatures of your choice.</description>
     </sheet>
-    <rules />
+    
   </element>
 
   <element name="Zealot's Savagery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
@@ -425,7 +425,7 @@
     </sheet>
     <rules>
         <requirements>ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION, [level:10]</requirements>
-    <rules />
+    </rules>
   </element>
   
   <element name="Holy Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
@@ -437,8 +437,8 @@
       <description>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </description>
     </sheet>
     <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="12" requirements="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION" />
-    <rules />
+        <requirements>=ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION, [level:12]</requirements>
+    </rules>
   </element>
 
   <element name="Big Game Hunter" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
@@ -449,13 +449,11 @@
     <sheet>
       <description>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="20" />
-    <rules />
+    
   </element>
 
 
-  <!-- Traps -->
+  <!-- Traps 
   
   <element name="Procession of Blades" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PROCESSION_OF_BLADES">
     <supports>Maneuver, Dragonhunter</supports>
@@ -465,9 +463,7 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. At level 3 this is 1d6, at level 20 this is 10d6. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
-    <rules />
+    
   </element>
 
   <element name="Purification" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURIFICATION">
@@ -478,9 +474,7 @@
     <sheet>
       <description>Cast Cure Wounds on yourself at a level equal to your Charisma modifier or lower, and imbue light into a 5 foot radius. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
-    <rules />
+    
   </element>
 
   <element name="Fragments of Faith" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_FRAGMENTS_OF_FAITH">
@@ -491,9 +485,7 @@
     <sheet>
       <description>Lay a trap down in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. When the trap is activated, allies within 10 feet impose disadvantage on the next creature that makes an attack roll against them. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
-    <rules />
+    
   </element>
 
   <element name="Light's Judgement" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHTS_JUDGEMENT">
@@ -504,9 +496,7 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap with the effects of Disguise Self or Invisibility are revealed in their true form. Any attack roll made against a creature within this trap gains advantage. Revealing effect will not change creatures under the effect of Polymorph. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
-    <rules />
+    
   </element>
 
   <element name="Test of Faith" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_TEST_OF_FAITH">
@@ -517,9 +507,7 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that cross into and out of melee range must make a Dexterity save higher than 8 + proficiency + Charisma or take damage equal to half your Dragonhunter level x a d6. On a failed save, the creature is also knocked prone. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="3" />
-    <rules />
+    
   </element>
 
   <element name="Dragon's Maw" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DRAGON'S_MAW">
@@ -530,11 +518,9 @@
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter a 10 foot radius must make a Dexterity save above 10 or be pulled into the center of the trap. Creatures that enter the 5 foot radius must make a Dexterity save above 8 + proficiency + Charisma or be pulled into the center. Creatures that are pulled in are grappled and prone, and may make a new save each turn to break free. </description>
     </sheet>
-    <rules>
-        <select type="Maneuver" name="Traits" supports="Maneuver,Dragonhunter" level="18" />
-    <rules />
+    
   </element>
 
-
+-->
 
 </elements>
