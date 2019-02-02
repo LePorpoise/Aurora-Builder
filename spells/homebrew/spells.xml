@@ -9,7 +9,7 @@
         </update>
     </info>
 
-    <element name="Virtuous Fire" type="Cantrip" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE">
+    <element name="Virtuous Fire" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE">
         <supports>Dragonhunter</supports>
         <description>
             <p> Class : Dragonhunter</p>
