@@ -58,6 +58,7 @@
     <setters>
       <set name="short">A strong warrior fit to slay dragons.</set>
       <set name="hd">d10</set>
+      <set name="spellcastingClass">Dragonhunter</set>
       <set name="spellcastingAbility">Charisma</set>
     </setters>
     <rules>
@@ -78,7 +79,8 @@
 
       <select type="Proficiency" name="Skill Proficiency (Dragonhunter)" supports="Skill, Dragonhunter" number="2" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
 
-      <select type="Cantrip" default="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE" supports="Cantrip, Dragonhunter" number="1" level="1" />
+      <select type="Spell" name="Cantrip (Dragonhunter)" supports="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE" level="1" number="1" spellcasting="Dragonhunter" />
+     
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_FIGHTING_STYLE" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAITS" level="2" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAPS" level="3" />
@@ -121,7 +123,7 @@
       <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
     </description>
     <rules>
-      <select type="Fighting Style" supports="Fighting Style" level="1"/>
+      <select type="Class Feature" supports="Fighting Style, Dragonhunter" level="1"/>
     </rules>
   </element>
 
