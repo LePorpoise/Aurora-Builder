@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of the Gambler</name>
+		<description>The College of the Gambler is a new Bardic College option to the Bard class, available at 3rd level. It plays as a more support-focused Bard, with additional utility for their Bardic Inspiration feature to alter and manipulate the battlefield in small ways. With a multitude of Conducting Techniques to choose from, you can customize your Gambler skill set to your liking. Do you wish to provide more control over battle placement and movement? Would you like to enable allies options to enhance their attacks? Perhaps you'd enjoy sutble healing and defense benefits for all around you? All of these flavors of additional playstyle options are at your disposal with the College of the Gambler.</description>
+		<author url="https://www.dandwiki.com/wiki/College_of_the_Gambler_(5e_Subclass)">D&amp;D Wiki</author>
+		<update version="0.0.2">
+			<file name="bard-maestro.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/critical-role/classes/bard-maestro.xml" />
+		</update>
+	</info>
+
+    <element name="College of the Gambler" type="Archetype" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_COLLEGE_OF_THE_GAMBLER">
+		<supports>Bard College</supports>
+		<description>
+			<p>Music is a powerful thing. It can bolster a burning passion, inspire the meek to bravery, and sooth a cluttered mind. Wandering bards have mastered the art of creating music to shape and manipulate the thoughts and hearts of the world through song, words, and instrument. However, it is the Gambler who has learned to evoke music from the natural world around them and weave these notes with arcane skill into melodies of dynamic and potent magic.</p>
+			<p class="indent">Many dismiss gamblers as fly-by-night hucksters or swindlers, relying on the foolishness of marks to gain and lose fortunes. But the College of the Gambler teaches its adherents both the workaday skills necessary to excel in the cutthroat world of gaming and the primal aleomancy that allows them to manipulate fortune itself into a somewhat more favorable direction. </p>
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_GAMESTER" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_PLAY_THE_ODDS" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_READ_THE_ROOM" />
+			<div element="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_POKER_FACE" />
+            <div element="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_KNOW_WHEN_TO_FOLD_EM" />
+		</description>
+		<sheet display="true">
+			<description>Some bards prefer the thrill of games of skill and chance to the polished art of performance. These bards have formed a loose association that goes by many names: the Brotherhood of Gamesters, the Gentlemen Speculators, and, of course, the College of the Gambler. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_GAMESTER" level="3" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_PLAY_THE_ODDS" level="3" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_READ_THE_ROOM" level="6" />
+			<grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_POKER_FACE" level="6" />
+            <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_KNOW_WHEN_TO_FOLD_EM" level="14" />
+		</rules>
+	</element>	
+    
+    <element name="Gamester" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_GAMESTER">
+		<description>
+			<p>When you join the College of the Gambler at 3rd level, you gain proficiency with the Insight and Deception skills and with two gaming sets of your choice. If you are already proficient in any of these, you may instead choose to gain expertise in them.</p>
+			<p class="indent">Additionally, you can use a gaming set as a spellcasting focus for your bard spells.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with the Insight and Deception skills.</description>
+			<description>You gain proficiency with two gaming sets of your choice.</description>
+			<description>If you are already proficient in any of these, you may instead choose to gain expertise in them.</description>
+		</sheet>
+		<rules>
+            <select type="Proficiency" name="Skill Expertise (Gambler)" supports="Insight, Deception" level="3" number="2" />
+            <select type="Proficiency" name="Tool Expertise (Gambler)" supports="Gaming Set" level="3" number="2" />
+		</rules>
+	</element>
+
+    <element name="Play the Odds" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_PLAY_THE_ODDS">
+		<description>
+			<p>Also at 3rd level, you learn to use some of your natural bardic talents to manipulate fortune. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to expend one of your uses of Bardic Inspiration, instead treating the creature's roll as either a 5 or a 15. You can use this ability after seeing the result of the roll. You may also expend a use of Bardic Inspiration while playing a game of chance to greatly increase your odds of success.</p>
+		</description>
+		<sheet>
+			<p>Also at 3rd level, you learn to use some of your natural bardic talents to manipulate fortune. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to expend one of your uses of Bardic Inspiration, instead treating the creature's roll as either a 5 or a 15. You can use this ability after seeing the result of the roll. You may also expend a use of Bardic Inspiration while playing a game of chance to greatly increase your odds of success.</p>
+		</sheet>
+	</element>
+
+   <element name="Read the Room" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_READ_THE_ROOM">
+		<description>
+			<p>At 6th level, you gain advantage on any Insight (Wisdom) checks meant to assess a creature's personality, spot changes in its mood, or predict its next course of action. As long as you are not surprised, you may add your proficiency bonus to any Initiative tests. </p>
+		</description>
+		<sheet>
+			<p>At 6th level, you gain advantage on any Insight (Wisdom) checks meant to assess a creature's personality, spot changes in its mood, or predict its next course of action. As long as you are not surprised, you may add your proficiency bonus to any Initiative tests. </p>
+		</sheet>
+	</element>
+
+    <element name="Poker Face" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_POKER_FACE">
+		<description>
+			<p>Also at 6th level, you gain advantage on any Deception (Charisma) tests meant to conceal your emotions or appear less intelligent than you are. Whenever a magical spell or effect would read your thoughts, determine the truthfulness of your statements, or compel you to tell the truth, you may make a Charisma saving throw to instead remain silent or cause the spell or effect to return no information at all. </p>
+		</description>
+		<sheet>
+			<p>Also at 6th level, you gain advantage on any Deception (Charisma) tests meant to conceal your emotions or appear less intelligent than you are. Whenever a magical spell or effect would read your thoughts, determine the truthfulness of your statements, or compel you to tell the truth, you may make a Charisma saving throw to instead remain silent or cause the spell or effect to return no information at all. </p>
+		</sheet>
+	</element>
+
+    <element name="Know When to Fold 'Em" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_ARCHETYPE_FEATURE_BARD_GAMBLER_KNOW_WHEN_TO_FOLD_EM">
+		<description>
+			<p>At 14th level, your natural ability to assess risk works in conjunction with your arcane abilities. During your turn, or as a reaction, you may choose to end one spell you are concentrating on. If you do so, you may immediately regain one spell slot equal to the level of the spell slot used to cast the spell you were concentrating on or lower. Once you use this ability, you can't use it again until you complete a short or a long rest. </p>
+		</description>
+		<sheet>
+			<p>At 14th level, your natural ability to assess risk works in conjunction with your arcane abilities. During your turn, or as a reaction, you may choose to end one spell you are concentrating on. If you do so, you may immediately regain one spell slot equal to the level of the spell slot used to cast the spell you were concentrating on or lower. Once you use this ability, you can't use it again until you complete a short or a long rest. </p>
+		</sheet>
+	</element>
+</elements>
