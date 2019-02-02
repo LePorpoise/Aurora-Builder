@@ -79,7 +79,7 @@
 
       <select type="Proficiency" name="Skill Proficiency (Dragonhunter)" supports="Skill, Dragonhunter" number="2" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
 
-      <select type="Spell" name="Cantrip (Dragonhunter)" level="1" number="1" spellcasting="Dragonhunter" />
+      <select type="Spell" name="Cantrip (Dragonhunter)" level="1" number="1" supports="Cantrip, Dragonhunter" />
      
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_FIGHTING_STYLE" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAITS" level="2" />
