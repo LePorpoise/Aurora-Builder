@@ -63,8 +63,8 @@
     </setters>
     <rules>
 
-      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" />
+      <!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" /> -->
 
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
@@ -79,7 +79,7 @@
 
       <select type="Proficiency" name="Skill Proficiency (Dragonhunter)" supports="Skill, Dragonhunter" number="2" requirements="!ID_WIKI_MULTICLASS_DRAGONHUNTER" />
 
-      <select type="Spell" name="Cantrip (Dragonhunter)" supports="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE" level="1" number="1" spellcasting="Dragonhunter" />
+      <select type="Spell" name="Cantrip (Dragonhunter)" level="1" number="1" spellcasting="Dragonhunter" />
      
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_FIGHTING_STYLE" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAITS" level="2" />

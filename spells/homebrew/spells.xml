@@ -12,7 +12,7 @@
     <element name="Virtuous Fire" type="Cantrip" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE">
         <supports>Dragonhunter</supports>
         <description>
-            <p> Class : Dragonhunter
+            <p> Class : Dragonhunter</p>
             <p> Starting at 1st level, you have unlocked virtues so pure that you can create blue flame at will.</p>
             <p class="indent"> You can cast Produce Flame at will. Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.</p>
             <p class="indent"> A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you.</p>
