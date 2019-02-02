@@ -136,14 +136,14 @@
       As the Dragonhunter gains levels, they may take new traits. These often replace level features. Below is the selection of traits available to choose, and necessary prerequisites.</p>
     </description>
     <rules>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="2" level="2"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="5"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="7"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="9"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="12"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="15"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="18"/>
-      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="20"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="2" level="2"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="5"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="7"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="9"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="12"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="15"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="18"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits, Dragonhunter" number="1" level="20"/>
     </rules>
   </element>
 
@@ -155,7 +155,7 @@
       Choose which traps you've chosen to learn in the order you wish. All traps last for 1d6 rounds of combat, or until they are activated. </description>
     </sheet>
     <rules>
-      <select type="Archetype Feature" name="Traps" supports="Traps" level="3" number="3"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="3" number="3"/>
     </rules>
   </element>
 
@@ -257,7 +257,7 @@
     </sheet>
   </element>
 
-  <element name="HUNTERS Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTERS_WARD">
+  <element name="Hunter's Ward" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_HUNTERS_WARD">
     <description>
       <p>At 20th level, you gain the ability to fire a magical arrow skyward. At any point within 60 feet, create a 20 foot long and 20 foot high barrier of energy. Creatures that attempt to pass through this barrier must succeed on a Strength save above 8 + proficiency + Charisma. On a failed save, the creature takes 5d6 radiant damage and is pushed back 5 feet. On a success, the creature passes through the barrier, and takes half damage.  </p>
     </description>
@@ -308,7 +308,7 @@
   <!-- Traits -->
 
   <element name="Piercing Light" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PIERCING_LIGHT">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</p>
     </description>
@@ -318,7 +318,7 @@
   </element>
 
   <element name="Defender's Dogma" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDER'S_DOGMA">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</p>
     </description>
@@ -328,7 +328,7 @@
   </element>
 
   <element name="Zealot's Aggression" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</p>
     </description>
@@ -338,7 +338,7 @@
   </element>
 
   <element name="Pure of Sight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>Longbow range increases to 600 feet without imposing disadvantage.</p>
     </description>
@@ -348,7 +348,7 @@
   </element>
 
   <element name="Hunter's Recovery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</p>
     </description>
@@ -358,7 +358,7 @@
   </element>
   
   <element name="Hunter's Fortification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When a creature misses an attack roll, you may make an additional save to negate any status effects.</p>
     </description>
@@ -368,7 +368,7 @@
   </element>
 
   <element name="Heavy Light" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</p>
     </description>
@@ -378,7 +378,7 @@
   </element>
 
   <element name="Soaring Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</p>
     </description>
@@ -388,7 +388,7 @@
   </element>
 
   <element name="Hunter's Determination" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</p>
     </description>
@@ -398,7 +398,7 @@
   </element>
 
   <element name="Bulwark" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>Shield of Courage now may effect up to 4 creatures of your choice.</p>
     </description>
@@ -408,7 +408,7 @@
   </element>
 
   <element name="Zealot's Savagery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</p>
     </description>
@@ -418,7 +418,7 @@
   </element>
   
   <element name="Holy Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </p>
     </description>
@@ -428,7 +428,7 @@
   </element>
 
   <element name="Big Game Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traits, Dragonhunter</supports>
     <description>
       <p>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </p>
     </description>
