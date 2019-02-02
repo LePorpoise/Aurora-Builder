@@ -155,7 +155,12 @@
       Choose which traps you've chosen to learn in the order you wish. All traps last for 1d6 rounds of combat, or until they are activated. </description>
     </sheet>
     <rules>
-      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="3" number="3"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="3" number="1"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="6" number="1"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="9" number="1"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="12" number="1"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="15" number="1"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps, Dragonhunter" level="18" number="1"/>
     </rules>
   </element>
 
