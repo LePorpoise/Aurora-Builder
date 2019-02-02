@@ -9,6 +9,33 @@
         </update>
     </info>
 
+    <element name="Virtuous Fire" type="Cantrip" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_VIRTUOUS_FIRE">
+        <supports>Dragonhunter</supports>
+        <description>
+            <p> Starting at 1st level, you have unlocked virtues so pure that you can create blue flame at will.</p>
+            <p class="indent"> You can cast Produce Flame at will. Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma.</p>
+            <p class="indent"> A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you.</p>
+            <p> Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8),  11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet>
+            <p> You can cast Produce Flame at will. Charisma becomes your spellcasting modifier. Your spell save becomes 8 + Proficiency + Charisma. A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8),  11th level (3d8), and 17th level (4d8).</p>
+        </sheet>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">10 minutes</set>
+            <set name="range">self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
     <element name="Begone Thot" type="Spell" source="D&amp;D Wiki" id="ID_WIKI_SPELL_BEGONE_THOT_VARIANT">
         <supports>Wizard, Sorcerer</supports>
         <description>
@@ -29,9 +56,5 @@
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
-<<<<<<< HEAD
     </element>
-=======
-</element>
->>>>>>> c4c72f67085ba1ac56447cebee764ba66603b68a
 </elements>
