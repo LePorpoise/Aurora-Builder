@@ -90,7 +90,7 @@
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_ASI" level="4" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SPEAR_OF_JUSTICE" level="6" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_WINGS_OF_RESOLVE" level="7" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SHIELD_OF_COURAGE" level="9" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SHIELD_OF_COURAGE" level="10" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_PUNCTURE_SHOT" level="11" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRUE_SHOT" level="14" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_DEFLECTING_SHOT" level="15" />
@@ -150,7 +150,7 @@
   <element name="Traps" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_TRAPS">
     <description> Beginning at 3rd level, you've gained the knowledge to lay down traps in combat, and to manipulate your foes into falling into them. Choose which traps you've chosen to learn in the order you wish. All traps last for 1d6 rounds of combat, or until they are activated. 
     </description>
-    <sheet display="false">
+    <sheet display="true">
       <description> Beginning at 3rd level, you've gained the knowledge to lay down traps in combat, and to manipulate your foes into falling into them. 
       Choose which traps you've chosen to learn in the order you wish. All traps last for 1d6 rounds of combat, or until they are activated. </description>
     </sheet>
@@ -390,6 +390,9 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</description>
     </sheet>
+    <!-- <rules>
+      <requirements>[level:7],ID_WIKI_CLASS_DRAGONHUNTER</requirements>
+    </rules> -->
   </element>
 
   <element name="Hunter's Determination" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
@@ -400,6 +403,9 @@
     <sheet>
       <description>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</description>
     </sheet>
+   <!-- <rules>
+      <requirements>[level:10],ID_WIKI_CLASS_DRAGONHUNTER</requirements>
+    </rules> -->
   </element>
 
   <element name="Bulwark" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
@@ -410,6 +416,9 @@
     <sheet>
       <description>Shield of Courage now may effect up to 4 creatures of your choice.</description>
     </sheet>
+   <!-- <rules>
+      <requirements>[level:10],ID_WIKI_CLASS_DRAGONHUNTER</requirements>
+    </rules> -->
   </element>
 
   <element name="Zealot's Savagery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
@@ -420,6 +429,9 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
+   <!-- <rules>
+      <requirements>[level:12],ID_WIKI_CLASS_DRAGONHUNTER,ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION</requirements>
+    </rules> -->
   </element>
   
   <element name="Holy Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
@@ -430,6 +442,9 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </description>
     </sheet>
+   <!-- <rules>
+      <requirements>[level:12],ID_WIKI_CLASS_DRAGONHUNTER,ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION</requirements>
+    </rules> -->
   </element>
 
   <element name="Big Game Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
@@ -440,13 +455,16 @@
     <sheet>
       <description>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </description>
     </sheet>
+   <!-- <rules>
+      <requirements>[level:20],ID_WIKI_CLASS_DRAGONHUNTER</requirements>
+    </rules> -->
   </element>
 
 
   <!-- Traps -->
   
   <element name="Procession of Blades" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PROCESSION_OF_BLADES">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. At level 3 this is 1d6, at level 20 this is 10d6. </p>
     </description>
@@ -457,7 +475,7 @@
   </element>
 
   <element name="Purification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURIFICATION">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Cast Cure Wounds on yourself at a level equal to your Charisma modifier or lower, and imbue light into a 5 foot radius. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. </p>
     </description>
@@ -468,7 +486,7 @@
   </element>
 
   <element name="Fragments of Faith" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_FRAGMENTS_OF_FAITH">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Lay a trap down in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. When the trap is activated, allies within 10 feet impose disadvantage on the next creature that makes an attack roll against them. </p>
     </description>
@@ -479,7 +497,7 @@
   </element>
 
   <element name="Light's Judgement" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHT'S_JUDGEMENT">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap with the effects of Disguise Self or Invisibility are revealed in their true form. Any attack roll made against a creature within this trap gains advantage. Revealing effect will not change creatures under the effect of Polymorph. </p>
     </description>
@@ -490,7 +508,7 @@
   </element>
 
   <element name="Test of Faith" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_TEST_OF_FAITH">
-    <supports>Archetype Feature, Dragonhunter</supports>
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that cross into and out of melee range must make a Dexterity save higher than 8 + proficiency + Charisma or take damage equal to half your Dragonhunter level x a d6. On a failed save, the creature is also knocked prone. </p>
     </description>
@@ -500,14 +518,16 @@
     <rules />
   </element>
 
-  <element name="Dragon's Maw" type="" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DRAGON'S_MAW">
-    <supports>Archetype Feature, Dragonhunter</supports>
+  <element name="Dragon's Maw" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DRAGON'S_MAW">
+    <supports>Traps, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter a 10 foot radius must make a Dexterity save above 10 or be pulled into the center of the trap. Creatures that enter the 5 foot radius must make a Dexterity save above 8 + proficiency + Charisma or be pulled into the center. Creatures that are pulled in are grappled and prone, and may make a new save each turn to break free. </p>
     </description>
     <sheet>
       <description>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter a 10 foot radius must make a Dexterity save above 10 or be pulled into the center of the trap. Creatures that enter the 5 foot radius must make a Dexterity save above 8 + proficiency + Charisma or be pulled into the center. Creatures that are pulled in are grappled and prone, and may make a new save each turn to break free. </description>
     </sheet>
-    <rules />
-  </element>
+   <!-- <rules>
+      <requirements>[level:18],ID_WIKI_CLASS_DRAGONHUNTER</requirements>
+    </rules> -->
+  </element> 
 </elements>
