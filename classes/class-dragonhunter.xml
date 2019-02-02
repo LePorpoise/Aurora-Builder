@@ -315,8 +315,6 @@
     <sheet>
       <description>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</description>
     </sheet>
-    <requirements> [level:2] </requirements>
-    <rules />
   </element>
 
   <element name="Defender's Dogma" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDER'S_DOGMA">
@@ -327,10 +325,9 @@
     <sheet>
       <description>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</description>
     </sheet>
-    <rules />
   </element>
 
-  <element name="ZEALOTS Aggression" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
+  <element name="Zealot's Aggression" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
     <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</p>
@@ -338,7 +335,6 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules />
   </element>
 
   <element name="Pure of Sight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
@@ -349,10 +345,9 @@
     <sheet>
       <description>Longbow range increases to 600 feet without imposing disadvantage.</description>
     </sheet>
-    <rules />
   </element>
 
-  <element name="HUNTERS Recovery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
+  <element name="Hunter's Recovery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
     <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</p>
@@ -360,10 +355,9 @@
     <sheet>
       <description>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</description>
     </sheet>
-    <rules />
   </element>
   
-  <element name="HUNTERS Fortification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
+  <element name="Hunter's Fortification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
     <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature misses an attack roll, you may make an additional save to negate any status effects.</p>
@@ -371,7 +365,6 @@
     <sheet>
       <description>When a creature misses an attack roll, you may make an additional save to negate any status effects.</description>
     </sheet>
-    <rules />
   </element>
 
   <element name="Heavy Light" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
@@ -382,7 +375,6 @@
     <sheet>
       <description>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</description>
     </sheet>
-    <rules />
   </element>
 
   <element name="Soaring Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
@@ -393,10 +385,9 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</description>
     </sheet>
-    <rules />
   </element>
 
-  <element name="HUNTERS Determination" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
+  <element name="Hunter's Determination" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
     <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</p>
@@ -404,7 +395,6 @@
     <sheet>
       <description>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</description>
     </sheet>
-    <rules />
   </element>
 
   <element name="Bulwark" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
@@ -415,10 +405,9 @@
     <sheet>
       <description>Shield of Courage now may effect up to 4 creatures of your choice.</description>
     </sheet>
-    <rules />
   </element>
 
-  <element name="ZEALOTS Savagery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
+  <element name="Zealot's Savagery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
     <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</p>
@@ -426,7 +415,6 @@
     <sheet>
       <description>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</description>
     </sheet>
-    <rules />
   </element>
   
   <element name="Holy Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
@@ -437,7 +425,6 @@
     <sheet>
       <description>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </description>
     </sheet>
-    <rules />
   </element>
 
   <element name="Big Game Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
@@ -448,7 +435,6 @@
     <sheet>
       <description>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </description>
     </sheet>
-    <rules />
   </element>
 
 
