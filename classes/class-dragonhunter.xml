@@ -136,7 +136,14 @@
       As the Dragonhunter gains levels, they may take new traits. These often replace level features. Below is the selection of traits available to choose, and necessary prerequisites.</p>
     </description>
     <rules>
-      <select type="Maneuver" name="Traits" supports="Traits" level="2" number="3"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="2" level="2"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="5"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="7"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="9"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="12"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="15"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="18"/>
+      <select type="Archetype Feature" name="Traits" supports="Traits" number="1" level="20"/>
     </rules>
   </element>
 
@@ -148,7 +155,7 @@
       Choose which traps you've chosen to learn in the order you wish. All traps last for 1d6 rounds of combat, or until they are activated. </description>
     </sheet>
     <rules>
-      <select type="Maneuver" name="Traps" supports="Traps" level="3" number="3"/>
+      <select type="Archetype Feature" name="Traps" supports="Traps" level="3" number="3"/>
     </rules>
   </element>
 
@@ -300,8 +307,8 @@
   
   <!-- Traits -->
 
-  <element name="Piercing Light" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PIERCING_LIGHT">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Piercing Light" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PIERCING_LIGHT">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When you roll a 20, enemies must make a Strength saving throw to avoid being knocked prone. The DC is 8 + proficiency + Charisma.</p>
     </description>
@@ -312,8 +319,8 @@
     <rules />
   </element>
 
-  <element name="Defender's Dogma" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDER'S_DOGMA">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Defender's Dogma" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DEFENDER'S_DOGMA">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</p>
     </description>
@@ -323,8 +330,8 @@
     <rules />
   </element>
 
-  <element name="ZEALOTS Aggression" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="ZEALOTS Aggression" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 1d6 of damage on your attack roll until the effect ends.</p>
     </description>
@@ -334,8 +341,8 @@
     <rules />
   </element>
 
-  <element name="Pure of Sight" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Pure of Sight" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURE_OF_SIGHT">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Longbow range increases to 600 feet without imposing disadvantage.</p>
     </description>
@@ -345,8 +352,8 @@
     <rules />
   </element>
 
-  <element name="HUNTERS Recovery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="HUNTERS Recovery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_RECOVERY">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Recovering from being knocked prone, being grappled, or being unconscious restores hit points equal to 1d6 + your Charisma modifier.</p>
     </description>
@@ -356,8 +363,8 @@
     <rules />
   </element>
   
-  <element name="HUNTERS Fortification" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="HUNTERS Fortification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_FORTIFICATION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature misses an attack roll, you may make an additional save to negate any status effects.</p>
     </description>
@@ -367,8 +374,8 @@
     <rules />
   </element>
 
-  <element name="Heavy Light" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Heavy Light" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HEAVY_LIGHT">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>After using Deflecting Shot, you may not be knocked prone, grappled, or knocked unconscious the turn after.</p>
     </description>
@@ -378,8 +385,8 @@
     <rules />
   </element>
 
-  <element name="Soaring Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Soaring Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_SOARING_DEVASTATION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to creatures in melee range equal to half the amount of hit points restored.</p>
     </description>
@@ -389,8 +396,8 @@
     <rules />
   </element>
 
-  <element name="HUNTERS Determination" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="HUNTERS Determination" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HUNTERS_DETERMINATION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When knocked prone, grappled, or unconscious, gain an AC bonus equal to your Constitution modifier until the effect ends.</p>
     </description>
@@ -400,8 +407,8 @@
     <rules />
   </element>
 
-  <element name="Bulwark" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Bulwark" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BULWARK">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Shield of Courage now may effect up to 4 creatures of your choice.</p>
     </description>
@@ -411,8 +418,8 @@
     <rules />
   </element>
 
-  <element name="ZEALOTS Savagery" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="ZEALOTS Savagery" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_SAVAGERY">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When a creature is prone, grappled, or unconscious, deal an additional 2d6 of damage on your attack roll until the effect ends.</p>
     </description>
@@ -422,8 +429,8 @@
     <rules />
   </element>
   
-  <element name="Holy Devastation" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Holy Devastation" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_HOLY_DEVASTATION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>When using Wings of Resolve, deal damage to large and undead creatures in melee range equal to the full value of hit points restored. </p>
     </description>
@@ -433,8 +440,8 @@
     <rules />
   </element>
 
-  <element name="Big Game Hunter" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Big Game Hunter" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_BIG_GAME_HUNTER">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Deal a permanent 2d6 additional damage to large creatures. This rises to 3d6 against huge creatures, and 4d6 against gargantuan creatures. </p>
     </description>
@@ -447,8 +454,8 @@
 
   <!-- Traps -->
   
-  <element name="Procession of Blades" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PROCESSION_OF_BLADES">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Procession of Blades" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PROCESSION_OF_BLADES">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. At level 3 this is 1d6, at level 20 this is 10d6. </p>
     </description>
@@ -458,8 +465,8 @@
     <rules />
   </element>
 
-  <element name="Purification" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURIFICATION">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Purification" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_PURIFICATION">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Cast Cure Wounds on yourself at a level equal to your Charisma modifier or lower, and imbue light into a 5 foot radius. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. </p>
     </description>
@@ -469,8 +476,8 @@
     <rules />
   </element>
 
-  <element name="Fragments of Faith" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_FRAGMENTS_OF_FAITH">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Fragments of Faith" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_FRAGMENTS_OF_FAITH">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Lay a trap down in a 5 foot radius from where you stand. Creatures that enter this trap must make a Dexterity save higher than 8 + proficiency + Charisma, or take damage equal to half of your Dragonhunter level x a d6. When the trap is activated, allies within 10 feet impose disadvantage on the next creature that makes an attack roll against them. </p>
     </description>
@@ -480,8 +487,8 @@
     <rules />
   </element>
 
-  <element name="Light's Judgement" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHT'S_JUDGEMENT">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Light's Judgement" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_LIGHT'S_JUDGEMENT">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter this trap with the effects of Disguise Self or Invisibility are revealed in their true form. Any attack roll made against a creature within this trap gains advantage. Revealing effect will not change creatures under the effect of Polymorph. </p>
     </description>
@@ -491,8 +498,8 @@
     <rules />
   </element>
 
-  <element name="Test of Faith" type="Maneuver" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_TEST_OF_FAITH">
-    <supports>Maneuver, Dragonhunter</supports>
+  <element name="Test of Faith" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_TEST_OF_FAITH">
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that cross into and out of melee range must make a Dexterity save higher than 8 + proficiency + Charisma or take damage equal to half your Dragonhunter level x a d6. On a failed save, the creature is also knocked prone. </p>
     </description>
@@ -503,7 +510,7 @@
   </element>
 
   <element name="Dragon's Maw" type="" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_DRAGON'S_MAW">
-    <supports>Maneuver, Dragonhunter</supports>
+    <supports>Archetype Feature, Dragonhunter</supports>
     <description>
       <p>Lay down a trap in a 5 foot radius from where you stand. Creatures that enter a 10 foot radius must make a Dexterity save above 10 or be pulled into the center of the trap. Creatures that enter the 5 foot radius must make a Dexterity save above 8 + proficiency + Charisma or be pulled into the center. Creatures that are pulled in are grappled and prone, and may make a new save each turn to break free. </p>
     </description>
