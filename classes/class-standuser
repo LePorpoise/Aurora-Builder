@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Stand User</name>
+    <description>The Stand User class from the Dungeons and Dragons Wiki.</description>
+    <author url="https://www.dandwiki.com/wiki/Stand_User_Variant_(5e_Class)">Wizards of the Coast</author>
+    <update version="0.1">
+      <file name="class-dragonhunter.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/classes/class-standuser.xml" />
+    </update>
+  </info>
+
+  <element name="Stand User" type="Class" source="D&amp;D Wiki" id="ID_WIKI_CLASS_STAND_USER">
+    <description>
+      <h5>QUICK BUILD</h5>
+      <p>You can make a Stand User quickly by following these suggestions. First, Strength should be your highest ability score, followed by Charisma. Second, choose the noble background.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a Stand User, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d10 per Stand User level<br />
+        <span class="emphasis">Hit Points at 1st Level:</span>10 + your Constitution modefier<br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d10 (or 6) + your Constitution modifier per Stand User level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light and Medium Armor<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, martial weapons<br />
+        <span class="emphasis">Tools:</span>One of your choice<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Charisma<br />
+        <span class="emphasis">Skills:</span>Choose 2: Nature, Perception, Athletics, Acrobatics, Investigation, and Intimidation <br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li><i>(a)</i> A pair of Gauntlets or <i>(b)</i> One simple or martial melee weapon of your choice</li>
+        <li><i>(a)</i> Extravagant Clothes or <i>(b)</i> Plain Clothes</li>
+        <li><i>(a)</i> Dungeoneer’s Pack or <i>(b)</i> Explorer’s Pack</li>
+        <li>A Tarot card to name your Stand off of or a piece of music or<i>(b)</i> A Piece of the Arrow (DM determined)</li>
+      </ul>
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_MANIFESTATION_OF_WILL" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SPIRIT_POINTS" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_PROUD_FOCUS" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_INVISIBLE_FORCE" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_EXCHANGE_BLOWS" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_EXPLOIT_THE_ARMOR(" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SPEAR_OF_JUSTICE" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_WINGS_OF_RESOLVE" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_PUNCTURE_SHOT" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_TRUE_SHOT" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_DEFLECTING_SHOT" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SYMBOL_OF_ENERGY" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_HUNTERS_WARD" />
+    </description>
+    <sheet display="false">
+      <description>A strong warrior fit to slay dragons.</description>
+    </sheet>
+    <setters>
+      <set name="short">A strong warrior fit to slay dragons.</set>
+      <set name="hd">d10</set>
+      <set name="spellcastingClass">Stand User</set>
+      <set name="spellcastingAbility">Charisma</set>
+    </setters>
+    <spellcasting name="Stand User" ability="Charisma" allowReplace="true">
+      <list>Stand User</list>
+    </spellcasting>
+    <rules>
+
+      <!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" /> -->
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+
+      <select type="Proficiency" name="Skill Proficiency (Stand User)" supports="Skill, Stand User" number="2" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
+
+      <select type="Spell" name="Cantrip (Stand User)" supports="$(spellcasting:list),0" number="1" spellcasting="Stand User" />
+     
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_FIGHTING_STYLE" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRAITS" level="2" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRAPS" level="3" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" level="4" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SPEAR_OF_JUSTICE" level="6" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_WINGS_OF_RESOLVE" level="7" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SHIELD_OF_COURAGE" level="10" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_PUNCTURE_SHOT" level="11" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRUE_SHOT" level="14" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_DEFLECTING_SHOT" level="15" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SYMBOL_OF_ENERGY" level="18" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_HUNTERS_WARD" level="20" />
+    </rules>
+
+    <multiclass id="ID_WIKI_MULTICLASS_STAND_USER">
+      <prerequisite>Strength 13 and Charisma 13</prerequisite>
+      <requirements>([str:13],[cha:13])</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      </rules>
+    </multiclass>
+  </element>
