@@ -164,15 +164,6 @@
     </rules>
   </element>
 
-  <element name="Ability Score Increase" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_ASI">
-    <description>
-      <p> When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
-    </description>
-    <sheet>
-      <description> When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</description>
-    </sheet>
-  </element>
-
   <element name="Spear of Justice" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_DRAGONHUNTER_SPEAR_OF_JUSTICE">
     <description>
       <p class="indent"> Beginning at 6th level, you may fire one shot with a spiritual chain tethered to it. At 9th level this increases to 2 shots, 3 at 13th, and 4 at 17th. Using this chain you may carry out any of the below actions.</p>

@@ -5,7 +5,7 @@
     <description>The Stand User class from the Dungeons and Dragons Wiki.</description>
     <author url="https://www.dandwiki.com/wiki/Stand_User_Variant_(5e_Class)">Wizards of the Coast</author>
     <update version="0.1">
-      <file name="class-dragonhunter.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/classes/class-standuser.xml" />
+      <file name="class-standuser.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/classes/class-standuser.xml" />
     </update>
   </info>
 
@@ -46,28 +46,23 @@
       <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_EXCHANGE_BLOWS" />
       <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_EXPLOIT_THE_ARMOR(" />
       <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_DENTING_BLOWS" />
       <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SPEAR_OF_JUSTICE" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_WINGS_OF_RESOLVE" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_PUNCTURE_SHOT" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_TRUE_SHOT" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_DEFLECTING_SHOT" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SYMBOL_OF_ENERGY" />
-      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_HUNTERS_WARD" />
-    </description>
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_ENDURANCE" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ARRIVEDERCI" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_LONG_TRAVELS" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_ORAORAORA" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_STANDO_POWA" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_UNBREAKABLE_WILL" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_SEASONED_STAND" />
+      <div element="ID_WIKI_CLASS_FEATURE_STAND_USER_REQUIEM" />
     <sheet display="false">
-      <description>A strong warrior fit to slay dragons.</description>
+      <description>A warrior that uses thir will as a powerful weapon.</description>
     </sheet>
     <setters>
-      <set name="short">A strong warrior fit to slay dragons.</set>
+      <set name="short">A warrior that uses their will as a powerful weapon.</set>
       <set name="hd">d10</set>
-      <set name="spellcastingClass">Stand User</set>
-      <set name="spellcastingAbility">Charisma</set>
     </setters>
-    <spellcasting name="Stand User" ability="Charisma" allowReplace="true">
-      <list>Stand User</list>
-    </spellcasting>
     <rules>
 
       <!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
@@ -76,45 +71,97 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
 
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
 
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
-
-      <select type="Proficiency" name="Skill Proficiency (Stand User)" supports="Skill, Stand User" number="2" requirements="!ID_WIKI_MULTICLASS_STAND_USER" />
-
-      <select type="Spell" name="Cantrip (Stand User)" supports="$(spellcasting:list),0" number="1" spellcasting="Stand User" />
      
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_FIGHTING_STYLE" level="1" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRAITS" level="2" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRAPS" level="3" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_MANIFESTATION_OF_WILL" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SPIRIT_POINTS" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_PROUD_FOCUS" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_INVISIBLE_FORCE" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_EXCHANGE_BLOWS" level="2" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_EXPLOIT_THE_ARMOR" level="2" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_DENTING_BLOWS" level="3" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI" level="4" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SPEAR_OF_JUSTICE" level="6" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_WINGS_OF_RESOLVE" level="7" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SHIELD_OF_COURAGE" level="10" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_PUNCTURE_SHOT" level="11" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_TRUE_SHOT" level="14" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_DEFLECTING_SHOT" level="15" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SYMBOL_OF_ENERGY" level="18" />
-      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_HUNTERS_WARD" level="20" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_ENDURANCE" level="6" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ARRIVEDERCI" level="10" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_LONG_TRAVELS" level="13" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ORAORAORA" level="14" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STANDO_POWA" level="15" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_UNBREAKABLE_WILL" level="17" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_REQUIEM" level="20" />
+
+      <grant type="Archetype" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" level="3" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="3" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="5" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="7" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="9" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="11" />
+      <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="14" />
     </rules>
 
     <multiclass id="ID_WIKI_MULTICLASS_STAND_USER">
       <prerequisite>Strength 13 and Charisma 13</prerequisite>
       <requirements>([str:13],[cha:13])</requirements>
       <setters>
-        <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+        <set name="multiclass proficiencies">Light armor, medium armor, simple weapons, martial weapons</set>
       </setters>
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
         <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
         <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
       </rules>
     </multiclass>
+  </element>
+
+  <element name="Manifestation of Will" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_MANIFESTATION_OF_WILL">
+    <description>
+      <p>You can call out or recall your Stand as a bonus action. When you call out your Stand, it occupies the same space as your character, and will follow you of its own accord unless you tell it otherwise. You can telepathically order your Stand to move as a bonus action, but ordering your Stand to interact with its surroundings (attack, lift something, etc.) you use up your action for that turn. Your Stand is immune to spells that buff or debuff a creature (Haste, Longstrider, etc.) and any effects of spells that target your Stand affect your character instead. You stand can phase through creatures/objects and everything seen by your stand is also seen by you. </p>
+    </description>
+    <sheet> 
+        <description>You can call out or recall your Stand as a bonus action. When you call out your Stand, it occupies the same space as your character, and will follow you of its own accord unless you tell it otherwise. You can telepathically order your Stand to move as a bonus action, but ordering your Stand to interact with its surroundings (attack, lift something, etc.) you use up your action for that turn. Your Stand is immune to spells that buff or debuff a creature (Haste, Longstrider, etc.) and any effects of spells that target your Stand affect your character instead. You stand can phase through creatures/objects and everything seen by your stand is also seen by you. </description>
+    </sheet>
+  </element>
+
+  <element name="Spirit Points" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SPIRIT_POINTS">
+    <description>
+      <p>Many Stand abilities require expending Spirit Points to activate. The number of spirit points you have is shown in the Stand User table. You regain all expended Spirit Points after completing a long rest. </p>
+    </description>
+    <sheet> 
+        <description>Many Stand abilities require expending Spirit Points to activate. The number of spirit points you have is shown in the Stand User table. You regain all expended Spirit Points after completing a long rest. </description>
+    </sheet>
+  </element>
+
+  <element name="Stand Proud Focus" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_PROUD_FOCUS">
+    <description>
+      <p>Stand Users live for combat in all forms. They have trained their minds as well as bodies to focus in the heat of battle. While a user is not wearing heavy armor they take 3 less damage from non magical piercing, slashing, and bludgeoning damage. They also gain advantage against Charm, Frighten, and Paralysis saving throws. </p>
+    </description>
+    <sheet> 
+        <description>Stand Users live for combat in all forms. They have trained their minds as well as bodies to focus in the heat of battle. While a user is not wearing heavy armor they take 3 less damage from non magical piercing, slashing, and bludgeoning damage. They also gain advantage against Charm, Frighten, and Paralysis saving throws. </description>
+    </sheet>
+  </element>
+
+  <element name="Ability Score Improvement (Stand User)" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_STAND_USER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_STAND_USER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_STAND_USER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_STAND_USER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_STAND_USER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Stand User 4)" supports="Improvement Option,Stand User,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_STAND_USER" level="4" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Stand User 8)" supports="Improvement Option,Stand User,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_STAND_USER" level="8" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Stand User 12)" supports="Improvement Option,Stand User,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_STAND_USER" level="12" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Stand User 16)" supports="Improvement Option,Stand User,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_STAND_USER" level="16" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Stand User 19)" supports="Improvement Option,Stand User,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_STAND_USER" level="19" requirements=""/>
+
+    </rules>
   </element>
