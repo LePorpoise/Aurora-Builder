@@ -92,6 +92,7 @@
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ORAORAORA" level="14" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STANDO_POWA" level="15" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_UNBREAKABLE_WILL" level="17" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SEASONED_STAND" level="18" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_REQUIEM" level="20" />
 
       <grant type="Archetype" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" level="3" />
@@ -145,6 +146,51 @@
         <description>Stand Users live for combat in all forms. They have trained their minds as well as bodies to focus in the heat of battle. While a user is not wearing heavy armor they take 3 less damage from non magical piercing, slashing, and bludgeoning damage. They also gain advantage against Charm, Frighten, and Paralysis saving throws. </description>
     </sheet>
   </element>
+  
+  <element name="Invisible Force" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_INVISIBLE_FORCE">
+    <description>
+      <p>Your Stand is only visible to other Stand Users and to strong magic users or Psions. Any damage dealt to your Stand is dealt to you. A creature that you have your Stand interact with must make a DC 25 wisdom saving throw. If they fail, the Stand remains invisible to them. Otherwise, they become aware of the stands presence but only after they get attacked by it. </p>
+    </description>
+    <sheet> 
+        <description>Your Stand is only visible to other Stand Users and to strong magic users or Psions. Any damage dealt to your Stand is dealt to you. A creature that you have your Stand interact with must make a DC 25 wisdom saving throw. If they fail, the Stand remains invisible to them. Otherwise, they become aware of the stands presence but only after they get attacked by it. </description>
+    </sheet>
+  </element>
+
+  <element name="Exchange Blows" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_EXPLOIT_THE_ARMOR">
+    <description>
+      <p>At at 2nd level, when a Stand User is damaged by a hostile creature, you make a DC 11 constitution check to see if you can gain 1 stack of Exchange Blows. On a success, you gain an extra attack when you or your stand uses a melee attack. You can only have up to your proficiency bonus amount of stacks and you gain an extra attack for each stack. You can use your bonus action to roll a check for an extra stack of Exchange Blows, as long as you have at least 1. These extra attacks are shared by both you and your stand. Using extra attacks during your turn does not consume the stacks. You may spend 1 stack to attack a creature, using either your or your stand's melee attack that attacks you during their turn if they are within range without using a reaction. All stacks are removed once you can no longer fighting any hostile creatures. </p>
+    </description>
+    <sheet> 
+        <description>At at 2nd level, when a Stand User is damaged by a hostile creature, you make a DC 11 constitution check to see if you can gain 1 stack of Exchange Blows. On a success, you gain an extra attack when you or your stand uses a melee attack. You can only have up to your proficiency bonus amount of stacks and you gain an extra attack for each stack. You can use your bonus action to roll a check for an extra stack of Exchange Blows, as long as you have at least 1. These extra attacks are shared by both you and your stand. Using extra attacks during your turn does not consume the stacks. You may spend 1 stack to attack a creature, using either your or your stand's melee attack that attacks you during their turn if they are within range without using a reaction. All stacks are removed once you can no longer fighting any hostile creatures. </description>
+    </sheet>
+  </element>
+
+  <element name="Exploit the Armor" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_EXPLOIT_THE_ARMOR">
+    <description>
+      <p>Starting at 2nd level, you learn to exploit the weakness in a creature's armor, causing you and your stand's successful melee attacks to a creature to ignore 1 unit of their armor class (1 AC per hit). This feature can stack with every successful hit up to 5 stacks. If their AC becomes less than 5, their AC instead becomes 1 and cannot go lower nor higher. This effect persists for the next 24 hours. </p>
+    </description>
+    <sheet> 
+        <description>Starting at 2nd level, you learn to exploit the weakness in a creature's armor, causing you and your stand's successful melee attacks to a creature to ignore 1 unit of their armor class (1 AC per hit). This feature can stack with every successful hit up to 5 stacks. If their AC becomes less than 5, their AC instead becomes 1 and cannot go lower nor higher. This effect persists for the next 24 hours. </description>
+    </sheet>
+  </element>
+
+  <element name="Stand User's Path" type="Achetype" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH">
+    <description>
+      <p>At third level, Stand Users choose whether they will hone their damage-dealing capabilities by following the Star Alignment, become a nigh-unkillable, team supporting tank by following the World Alignment, manipulate the battlefield with Hierophant Alignment alignment, become an agile, close range based attacker by following the Chariot Alignment, become a marksman with infinite power choosing the Tusk Alignment , manipulate dismensions with The Dirt Cheap Alignment , become the ultimate healer and regenerator by following the Diamond Alignment, become a devastating foe to be reckoned, dealing major explosive damage with the Queen Alignment, control forces of life with the Experience Alignment,Fire with the precision of a god with the Pistol Alignment or command destiny itself with the King Alignment </p>
+    </description>
+    <sheet display="false"> 
+        <description>At third level, Stand Users choose whether they will hone their damage-dealing capabilities by following the Star Alignment, become a nigh-unkillable, team supporting tank by following the World Alignment, manipulate the battlefield with Hierophant Alignment alignment, become an agile, close range based attacker by following the Chariot Alignment, become a marksman with infinite power choosing the Tusk Alignment , manipulate dismensions with The Dirt Cheap Alignment , become the ultimate healer and regenerator by following the Diamond Alignment, become a devastating foe to be reckoned, dealing major explosive damage with the Queen Alignment, control forces of life with the Experience Alignment,Fire with the precision of a god with the Pistol Alignment or command destiny itself with the King Alignment </description>
+    </sheet>
+  </element>
+
+  <element name="Denting Blows" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_DENTING_BLOWS">
+    <description>
+      <p>At 3rd level, if you are grappling a creature or being grappled, your and your stand's attacks do not miss and you add your proficiency bonus to the damage roll if its not there already. Roll to attack to determine if you can score a critical hit. If the creature has an AC of 5 or less, it automatically takes critical damage, but roll to attack anyway to see if they take critical damage again. This feature extends to creatures who are too large to be grappled as long as you climb on to them. Furthermore, unarmed and gauntlets both now have the Light and Finesse properties when used by you or your stand. You can now attack with your stand using your bonus action as well; this does not require you to make an attack with you or your stand beforehand. </p>
+    </description>
+    <sheet> 
+        <description>At 3rd level, if you are grappling a creature or being grappled, your and your stand's attacks do not miss and you add your proficiency bonus to the damage roll if its not there already. Roll to attack to determine if you can score a critical hit. If the creature has an AC of 5 or less, it automatically takes critical damage, but roll to attack anyway to see if they take critical damage again. This feature extends to creatures who are too large to be grappled as long as you climb on to them. Furthermore, unarmed and gauntlets both now have the Light and Finesse properties when used by you or your stand. You can now attack with your stand using your bonus action as well; this does not require you to make an attack with you or your stand beforehand. </description>
+    </sheet>
+  </element>
 
   <element name="Ability Score Improvement (Stand User)" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ASI">
     <description>
@@ -162,6 +208,79 @@
       <select type="Class Feature" name="Improvement Option (Stand User 12)" supports="Improvement Option,Stand User,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_STAND_USER" level="12" requirements=""/>
       <select type="Class Feature" name="Improvement Option (Stand User 16)" supports="Improvement Option,Stand User,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_STAND_USER" level="16" requirements=""/>
       <select type="Class Feature" name="Improvement Option (Stand User 19)" supports="Improvement Option,Stand User,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_STAND_USER" level="19" requirements=""/>
-
     </rules>
   </element>
+
+  <element name="Stand User's Endurance" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_ENDURANCE">
+    <description>
+      <p>Starting at 6th level, your AC when not wearing armor is equal to 12 + your Constitution modifier + your proficiency bonus. Furthermore, when you are forced to make a STR or CON saving throw that causes you to take half damage if you succeed, you instead take no damage if you succeed and half damage if you fail. You also become immune to paralysis and cannot be forced prone by any means unless you choose to do so as an action. If you are restrained, you may expend 1 spirit point as a bonus action to immediately break free of it; you can then use your bonus action to break out of any further restraints put on you by the same creature without spending any spirit points. </p>
+    </description>
+    <sheet> 
+        <description>Starting at 6th level, your AC when not wearing armor is equal to 12 + your Constitution modifier + your proficiency bonus. Furthermore, when you are forced to make a STR or CON saving throw that causes you to take half damage if you succeed, you instead take no damage if you succeed and half damage if you fail. You also become immune to paralysis and cannot be forced prone by any means unless you choose to do so as an action. If you are restrained, you may expend 1 spirit point as a bonus action to immediately break free of it; you can then use your bonus action to break out of any further restraints put on you by the same creature without spending any spirit points. </description>
+    </sheet>
+  </element>
+
+  <element name="Arivederci" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ARRIVEDERCI">
+    <description>
+      <p>Starting at 10th level, you live for and thrive in combat; starting at level 10, you can add your strength or charisma modifier to your initiative rolls. You also become immune to both charmed and frightened conditions. </p>
+    </description>
+    <sheet> 
+        <description>Starting at 10th level, you live for and thrive in combat; starting at level 10, you can add your strength or charisma modifier to your initiative rolls. You also become immune to both charmed and frightened conditions. </description>
+    </sheet>
+  </element>
+
+  <element name="Long Travels" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_LONG_TRAVELS">
+    <description>
+      <p>Starting at 13th level, your travels have caused you to adapt to the rough obstacles you face. You cannot become exhausted from using dash or from environmental hazards. When you complete a short rest, you recover double the normal amount of hit points and remove 1 level of exhaustion. Furthermore, you can now use your bonus action to dash or disengage. </p>
+    </description>
+    <sheet> 
+        <description>Starting at 13th level, your travels have caused you to adapt to the rough obstacles you face. You cannot become exhausted from using dash or from environmental hazards. When you complete a short rest, you recover double the normal amount of hit points and remove 1 level of exhaustion. Furthermore, you can now use your bonus action to dash or disengage. </description>
+    </sheet>
+  </element>
+
+  <element name="ORAORAORA" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_ORAORAORA">
+    <description>
+      <p>At 14th level, your strength and constitution scores can not be reduced, and your hit point maximum can not be reduced. You gain advantage to attack rolls against any creature you have successfully landed a hit on. Furthermore, you automatically gain 1 stack of Exchange Blows instead of rolling for them. Your critical hits for both your and your stand's attack rolls are now 18-20. </p>
+    </description>
+    <sheet> 
+        <description>At 14th level, your strength and constitution scores can not be reduced, and your hit point maximum can not be reduced. You gain advantage to attack rolls against any creature you have successfully landed a hit on. Furthermore, you automatically gain 1 stack of Exchange Blows instead of rolling for them. Your critical hits for both your and your stand's attack rolls are now 18-20. </description>
+    </sheet>
+  </element>
+
+  <element name="Stando Powa!" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STANDO_POWA">
+    <description>
+      <p>At 15th level, you now gain 1 stack of Stando Powa! each time you or your stand fail an attack roll against a creature. When a creature makes an attack against you, you can use 1 stack of Stando Powa! to completely negate the damage/effect; this does not consume a reaction. Projectiles are deflected and attacks are countered by your or your stand's weapons. Furthermore, if you fail an attack roll, you may expend 3 stack of Stando Powa! to change the failed roll into a success. You can have up to your proficiency bonus amount of stacks. If you are at max stacks, you may expend all of them instead of the usual 1 stack to have your attack become a critical hit that uses the max damage roll. You do not gain stacks from a successful hit caused by expending a stack. Stando Powa! stacks stay with you until you are no longer fighting any hostile creatures. </p>
+    </description>
+    <sheet> 
+        <description>At 15th level, you now gain 1 stack of Stando Powa! each time you or your stand fail an attack roll against a creature. When a creature makes an attack against you, you can use 1 stack of Stando Powa! to completely negate the damage/effect; this does not consume a reaction. Projectiles are deflected and attacks are countered by your or your stand's weapons. Furthermore, if you fail an attack roll, you may expend 3 stack of Stando Powa! to change the failed roll into a success. You can have up to your proficiency bonus amount of stacks. If you are at max stacks, you may expend all of them instead of the usual 1 stack to have your attack become a critical hit that uses the max damage roll. You do not gain stacks from a successful hit caused by expending a stack. Stando Powa! stacks stay with you until you are no longer fighting any hostile creatures. </description>
+    </sheet>
+  </element>
+
+  <element name="Unbreakable Will" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_UNBREAKABLE_WILL">
+    <description>
+      <p>Beginning at level 17, your years of battle have given you the ability to ignore some of the most detrimental conditions of battle. You are immune to being blinded, stunned, or poisoned. You no longer take extra damage from critical hits and hostile creatures cannot gain advantage on you if you are restrained. </p>
+    </description>
+    <sheet> 
+        <description>Beginning at level 17, your years of battle have given you the ability to ignore some of the most detrimental conditions of battle. You are immune to being blinded, stunned, or poisoned. You no longer take extra damage from critical hits and hostile creatures cannot gain advantage on you if you are restrained. </description>
+    </sheet>
+  </element>
+
+  <element name="Seasoned Stand" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SEASONED_STAND">
+    <description>
+      <p>At 18th level, your stand gains +5 to hit and all damage from your stand's attacks are doubled, if they were proficient with whatever they were using. If your stand is in the same space as you, you also gain these bonuses. At 20th level, they gain +7 to hit and damage is tripled instead. </p>
+    </description>
+    <sheet> 
+        <description>At 18th level, your stand gains +5 to hit and all damage from your stand's attacks are doubled, if they were proficient with whatever they were using. If your stand is in the same space as you, you also gain these bonuses. At 20th level, they gain +7 to hit and damage is tripled instead. </description>
+    </sheet>
+  </element>
+
+  <element name="Requiem" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_STAND_USER_REQUIEM">
+    <description>
+      <p>Beginning at level 20, you touch your stand with the arrow, it gains a special bonus that is path specific. Your stand can now move up to 30 ft away and, with your bonus action, can use any class feature you possess. You can move your stand as a free action now. </p>
+    </description>
+    <sheet> 
+        <description>Beginning at level 20, you touch your stand with the arrow, it gains a special bonus that is path specific. Your stand can now move up to 30 ft away and, with your bonus action, can use any class feature you possess. You can move your stand as a free action now. </description>
+    </sheet>
+  </element>
+
+</elements>
