@@ -95,7 +95,7 @@
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_SEASONED_STAND" level="18" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_STAND_USER_REQUIEM" level="20" />
 
-      <grant type="Archetype" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" level="3" />
+      <grant type="Class Feature" supports="Stand, Archetype" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH" level="3" />
       <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="3" />
       <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="5" />
       <grant type="Archetype Feature" supports="Stand" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH_FEATURE" level="7" />
@@ -282,5 +282,29 @@
         <description>Beginning at level 20, you touch your stand with the arrow, it gains a special bonus that is path specific. Your stand can now move up to 30 ft away and, with your bonus action, can use any class feature you possess. You can move your stand as a free action now. </description>
     </sheet>
   </element>
+
+  <!--> Stand Archetypes-->
+
+  <element name="The Star" type="Archetype" source="Player’s Handbook" id="ID_WIKI_CLASS_FEATURE_STAND_USER_STAND_USERS_PATH">
+    <supports>Stand</supports>
+    <description>
+      <p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>
+      <div element="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_"/>
+      <div element="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_"/>
+      <div element="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_"/>
+      <div element="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_"/>
+      <div element="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_"/>
+    </description>
+    <sheet>
+      <description>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_" level="3"/>
+      <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_" level="7"/>
+      <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_" level="10"/>
+      <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_" level="15"/>
+      <grant type="Archetype Feature" name="ID_WIKI_ARCHETYPE_FEATURE_STAND_USER_" level="18"/>
+    </rules>
+  </element> 
 
 </elements>
