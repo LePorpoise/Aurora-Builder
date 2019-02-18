@@ -83,7 +83,7 @@ Borad (Ursine Witcher)]]></allies>
 			<skin>Amber Fur</skin>
 			<hair>Short</hair>
 		</appearance>
-		<abilities available-points="-9">
+		<abilities available-points="15">
 			<strength>13</strength>
 			<dexterity>14</dexterity>
 			<constitution>12</constitution>
