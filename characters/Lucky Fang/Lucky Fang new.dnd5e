@@ -5,11 +5,11 @@
 	<display-properties favorite="true">
 		<name>Lucky Fang</name>
 		<race>Tabaxi</race>
-		<class>Rogue (6) / Bard (1)</class>
+		<class>Rogue (7) / Bard (1)</class>
 		<archetype>
 		</archetype>
 		<background>Criminal</background>
-		<level>7</level>
+		<level>8</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -23,7 +23,7 @@
 			<name>Lucky Fang</name>
 			<gender>Male</gender>
 			<player-name>Scott</player-name>
-			<experience>31500</experience>
+			<experience>41000</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="+3 vs AC" damage="1d6 + 3 slashing" displayed="true">
@@ -68,8 +68,8 @@ Borad (Ursine Witcher)]]></allies>
 				<copper>0</copper>
 				<silver>0</silver>
 				<electrum>0</electrum>
-				<gold>98</gold>
-				<platinum>98</platinum>
+				<gold>0</gold>
+				<platinum>0</platinum>
 				<equipment><![CDATA[]]></equipment>
 				<treasure><![CDATA[A mysterious, indecipherable treasure map.]]></treasure>
 			</currency>
@@ -91,7 +91,7 @@ Borad (Ursine Witcher)]]></allies>
 			<wisdom>14</wisdom>
 			<charisma>17</charisma>
 		</abilities>
-		<elements level-count="7" registered-count="42">
+		<elements level-count="8" registered-count="43">
 			<element type="Option" name="Average Hit Points" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -172,6 +172,7 @@ Borad (Ursine Witcher)]]></allies>
 						</element>
 					</element>
 					<element type="Class Feature" name="Uncanny Dodge" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" />
+					<element type="Class Feature" name="Evasion" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION" />
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_BACKGROUND_CRIMINAL">
 					<element type="Proficiency" name="Gaming Set (Criminal)" requiredLevel="1" checksum="72b1cf74" registered="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
@@ -210,7 +211,7 @@ Borad (Ursine Witcher)]]></allies>
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="1" checksum="471aa73f" registered="ID_PHB_SPELL_ILLUSORY_SCRIPT" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="2" checksum="3962ef99" registered="ID_PHB_SPELL_SLEEP" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="3" checksum="134ad7fb" registered="ID_PHB_SPELL_FEATHER_FALL" />
-						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="4" checksum="c5927ed5" registered="ID_PHB_SPELL_BANE" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="4" checksum="c5927ed5" registered="ID_PHB_SPELL_UNSEEN_SERVANT" />
 						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
 						<element type="Grants" name="Multiclass Spellcasting Slots Full" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
 					</element>
@@ -223,6 +224,7 @@ Borad (Ursine Witcher)]]></allies>
 				</element>
 				<element type="Grants" name="Multiclassing (Level 7)" id="ID_INTERNAL_MULTICLASS_LEVEL_7" />
 			</element>
+			<element type="Level" name="8" id="ID_LEVEL_8" />
 		</elements>
 		<defenses>
 			<conditional>Base AC = 18 (Equipped Glamoured Std. Leather Armor +3)
@@ -362,16 +364,15 @@ The illusory appearance lasts until you use this property again or remove the ar
 					</notes>
 				</details>
 			</item>
-			<item identifier="93bd03da-d9b8-4a7c-9f25-2946b8c57dc6" name="Poison, Basic (vial)" id="ID_WOTC_PHB_ITEM_POISON_BASIC_VIAL" amount="2">
+			<item identifier="41db205a-d947-4a15-9941-e876c5aaf4c2" name="Case, Map or Scroll" id="ID_WOTC_PHB_ITEM_CASE_MAPORSCROLL">
 				<details card="true">
-					<name>Poison of Sleeping - DC 15</name>
-					<notes>You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. 
-Applying the poison takes an action. 
-A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. 
-Once applied, the poison retains potency for 1 minute before drying.</notes>
+					<name>
+					</name>
+					<notes>
+					</notes>
 				</details>
 			</item>
-			<item identifier="41db205a-d947-4a15-9941-e876c5aaf4c2" name="Case, Map or Scroll" id="ID_WOTC_PHB_ITEM_CASE_MAPORSCROLL">
+			<item identifier="7f829e78-a73b-4bb8-8819-1a62aca49436" name="Climber’s Kit" id="ID_WOTC_PHB_ITEM_CLIMBERSKIT">
 				<details card="true">
 					<name>
 					</name>
@@ -478,7 +479,7 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="110">
+		<sum element-count="112">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -527,11 +528,12 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Spell" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" />
 			<element type="Spell" id="ID_PHB_SPELL_SLEEP" />
 			<element type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
-			<element type="Spell" id="ID_PHB_SPELL_BANE" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_SCIMITAR" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_STUDDED_LEATHER" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_ARMOR_3" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_RING_OF_PROTECTION" />
+			<element type="Level" id="ID_LEVEL_8" />
+			<element type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -571,6 +573,7 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION" />
 			<element type="Class Feature" id="ID_EXPERTISE_TOOL_THIEVES_TOOLS" />
 			<element type="Class Feature" id="ID_EXPERTISE_SKILL_STEALTH" />
 			<element type="Archetype" id="ID_WOTC_PHB_ARCHETYPE_THIEF" />
@@ -598,10 +601,10 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 					<spell name="Minor Illusion" level="0" id="ID_PHB_SPELL_MINOR_ILLUSION" />
 				</cantrips>
 				<spells>
-					<spell name="Bane" level="1" id="ID_PHB_SPELL_BANE" known="true" />
 					<spell name="Feather Fall" level="1" id="ID_PHB_SPELL_FEATHER_FALL" known="true" />
 					<spell name="Illusory Script" level="1" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" known="true" />
 					<spell name="Sleep" level="1" id="ID_PHB_SPELL_SLEEP" known="true" />
+					<spell name="Unseen Servant" level="1" id="ID_PHB_SPELL_UNSEEN_SERVANT" known="true" />
 				</spells>
 			</spellcasting>
 		</magic>
