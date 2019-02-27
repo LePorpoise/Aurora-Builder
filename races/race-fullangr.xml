@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Fullangr</name>
+        <description>5e homebrew</description>
+        <author url="https://dnd-wiki.org/wiki/Fullangr_(3.5e_Race)">D&amp;D Wiki</author>
+        <update version="0.0.1">
+            <file name="race-fullangr.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/race-fullangr.xml" />
+        </update>
+    </info>
+
+    <element name="Fullangr" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_FULLANGR">
+        <description>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Fullangrs range from 6 to 7 feet tall but possess dwarven, not human, proportions and as a result they seem far bulkier and larger than they actually are. They seem to take largely after their dwarven heritage, though small signs of giant blood can be found depending on the breed such as retaining a storm giant's purple skin, a fire giant's flaming red hair, or other aspects. Not only go they have dwarven proportions but their proportions themselves seem exaggerated. They are not merely wide, but as wide as a truck! They are not merely muscled, but are built like bodybuilders! They don't merely have beards, they have glorious lion manes! It can even pose problems if they end up with massive shoulders and fists but tiny feet and head. </p>
+            <h4>HISTORY</h4>
+            <p>Dwarves and giants have never been friends. Its a conflict of territory often, with both races claiming the mountains, hills, and caves and causing each other trouble. But as any intermixing of cultures, even the violent ones, some may result in a bond of love and the creation of children. The children of dwarves and giants, the result is something of a giant dwarf (as nonsensical as that seems).</p>
+            <h4>SOCIETY</h4>
+            <p>Because dwarves and giants typically don't get along, the children born from these unions are typically frown upon. In dwarven societies they may be accepted only after much trouble and considerations, while giant tribes may accept them based on the personality of the tribe and on a case by case basis. Those that don't lose hope in others often set out as adventurers, for what else would accept them and what else brings as much gusto to their lives? </p>
+            <h4>FULLANGR NAMES</h4>
+            <p>Fullangr names trend towards the nature of where they grew up, either giant or dwarven, though to many outsiders some may claim both have a Nordic feel to them. If not that, so the stereotype goes, some claim they take names which sound simply extreme like HACK BLOWFIST! SLAB SQUAT-THRUST! FLINT IRONSTAG! And more. In all caps, of course. </p>
+            <p>
+                <b>Male: </b>Hack Blowfist<br/>
+                <b>Female: </b>Slab Squat-Thrust<br/>          
+            </p>
+            <h4>FULLANGR TRAITS</h4>
+            <p>Literally sentient dirt.</p>
+                <p>
+                    <span class="feature">Ability Score Increase.</span>+2 Strength, +4 Constitution: Strong! Buff! And somehow more charismatic than dwarves due to their bombastic personalities. Fullangrs are certainly a healthy lot.<br />
+                    <span class="feature">Age.</span>Starting age is usually around 30, but you can roll up to 4d6 to add an extra couple years or so.<br />
+                    <span class="feature">Alignment.</span>Fullangrs can be any alignment, but whatever alignment they are they shall do it with greatest effort. <br />
+                    <span class="feature">Size.</span>Medium. As a Medium creature, a fullangr has no special bonuses or penalties due to its size. <br />
+                    <span class="feature">Speed.</span>Fullangr base land speed is 20 feet. However, fullangr can move at this speed even when wearing medium or heavy armor or when carrying a medium or heavy load (unlike other creatures, whose speed is reduced in such situations).<br />
+                    <span class="feature">Giantblooded.</span>A fullangr counts as a giant as well as a member of its actual type. <br />
+                    <span class="feature">Item Toss.</span>A fullangr can throw any item as if it were a ranged throwing weapon with a ranged increment of 10 ft (or +10 ft range if already a throwing weapon). They are considered proficient in "rocks" and may throw rocks (about the size of a basketball to a beach ball) which deal 1d10 bludgeoning damage. <br />
+                    <span class="feature">Oversized Grip.</span>A fullangr has big hands for extreme weapon holding. It may use two-handed weapons one-handed. Combined with Powerful Build this allows them to wield a Large Greatsword in one hand, or a Huge Greatsword in two hands at a -2 penalty. <br />
+                    <span class="feature">Powerful Build.</span>The physical stature of fullangrs lets them function in many ways as if they were one size category larger. Whenever a fullangr is subject to a size modifier or special size modifier for an opposed check (such as during grapple checks, bull rush attempts, and trip attempts), the fullangr is treated as one size larger if doing so is advantageous to him. An fullangr is also considered to be one size larger when determining whether a creature’s special attacks based on size (such as improved grab or swallow whole) can affect him. A fullangr can use weapons designed for a creature one size larger without penalty. However, his space and reach remain those of a creature of his actual size. The benefits of this racial trait stack with the effects of powers, abilities, and spells that change the subject’s size category. <br />
+                    <span class="feature">Stability.</span>A fullangr gains a +4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground). <br />
+                    <span class="feature">Magical Soil.</span>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.<br />
+                    <span class="feature">Languages.</span>Sentient dirt can understand all languages but can't speak or read.<br />
+                </p>
+        </description>
+        <setters>
+            <set name="names" type="male">None</set>
+            <set name="names" type="female">None</set>
+            <set name="names-format">$(name)</set>
+            <set name="height" modifier="1d4">1'2"</set>
+            <set name="weight" modifier="(none)">17</set>
+        </setters>
+        <sheet display="false">
+            <description>"Through out history there has been something that we have always known, that thing is dirt, it has contributed to our survival but it is something we usually forget even exists." -A Wise Man </description>
+        </sheet>
+        <rules>
+            <stat name="Constitution" value="5" />
+            <select type="Ability Score Improvement" name="Fullangr" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_INTELLIGENCE" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="Speed" value="0" bonus="base" />
+        </rules>
+    </element>
+    <element name="Fullangr has no eyes or ears" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_FULLANGR_HAS_NO_EYES_OR_EARS">
+        <sheet>
+            <description>You are blind and deaf, you have disadvantage on any check that is related to sight or hearing.</description>
+        </sheet>
+    </element>
+    <element name="Magical Fullangrelepathy" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_MAGICAL_FULLANGRELEPATHY">
+        <sheet>
+            <description>You can telepathically communicate with any creature with an Intelligence above 3 that knows at least 1 language within 100 ft of you.</description>
+        </sheet>
+    </element>
+    <element name="Damage Immunity" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_DAMAGE_IMMUNITY">
+        <sheet>
+            <description>You are immune to lightning damage.</description>
+        </sheet>
+    </element>
+    <element name="Connection to the ground" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_CONNECTION_TO_GROUND">
+        <sheet>
+            <description>You have a deep connection with the ground allowing you to know where anything that is in contact with the ground within 100ft of you is.</description>
+        </sheet>
+    </element>
+    <element name="Fullangr has no limbs" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_HAS_NO_LIMBS">
+        <sheet>
+            <description>You can't hold anything unless some one else sticks it in you, but you still can't move that object by yourself.</description>
+        </sheet>
+    </element>
+    <element name="Magical Soil" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_HAS_NO_LIMBS">
+        <sheet>
+            <description>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.</description>
+        </sheet>
+    </element>
+</elements>
