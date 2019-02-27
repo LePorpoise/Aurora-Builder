@@ -5,11 +5,11 @@
 	<display-properties favorite="true">
 		<name>Lucky Fang</name>
 		<race>Tabaxi</race>
-		<class>Rogue (7) / Bard (1)</class>
+		<class>Rogue (8) / Bard (1)</class>
 		<archetype>
 		</archetype>
 		<background>Criminal</background>
-		<level>8</level>
+		<level>9</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -23,7 +23,7 @@
 			<name>Lucky Fang</name>
 			<gender>Male</gender>
 			<player-name>Scott</player-name>
-			<experience>41000</experience>
+			<experience>48000</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
 				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="+3 vs AC" damage="1d6 + 3 slashing" displayed="true">
@@ -32,7 +32,7 @@
 				<attack identifier="" name="Dagger" range="5 feet" attack="Piercing" damage="1d4 +Dex. +Prof." displayed="true">
 					<description><![CDATA[Finesse, Light, Thrown 20/60 feet]]></description>
 				</attack>
-				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="+6 vs AC" damage="1d8 + 3 slashing" displayed="true">
+				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="+7 vs AC" damage="1d8 + 3 slashing" displayed="true">
 					<description><![CDATA[Versitile]]></description>
 				</attack>
 				<attack identifier="" name="Unarmed Strike (Tabaxi)" range="5 feet" attack="Slashing" damage="1d4 +Str. +Prof." displayed="true">
@@ -91,7 +91,7 @@ Borad (Ursine Witcher)]]></allies>
 			<wisdom>14</wisdom>
 			<charisma>17</charisma>
 		</abilities>
-		<elements level-count="8" registered-count="43">
+		<elements level-count="9" registered-count="46">
 			<element type="Option" name="Average Hit Points" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -170,6 +170,9 @@ Borad (Ursine Witcher)]]></allies>
 							<element type="Ability Score Improvement" name="Ability Score Increase (ROGUE 4)" requiredLevel="4" number="1" checksum="f44a8814" registered="ID_INTERNAL_ASI_CHARISMA" />
 							<element type="Ability Score Improvement" name="Ability Score Increase (ROGUE 4)" requiredLevel="4" number="2" checksum="6d43d9ae" registered="ID_INTERNAL_ASI_CHARISMA" />
 						</element>
+						<element type="Class Feature" name="Improvement Option (Rogue 8)" requiredLevel="8" checksum="bce7d506" registered="ID_INTERNAL_CLASS_FEATURE_FEAT_8_ROGUE">
+							<element type="Feat" name="Feat (ROGUE 8)" requiredLevel="8" checksum="cc81e93d" registered="ID_PHB_FEAT_LUCKY" />
+						</element>
 					</element>
 					<element type="Class Feature" name="Uncanny Dodge" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" />
 					<element type="Class Feature" name="Evasion" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION" />
@@ -210,7 +213,7 @@ Borad (Ursine Witcher)]]></allies>
 						<element type="Spell" name="Cantrip (Bard)" requiredLevel="1" number="2" checksum="62fe64bb" registered="ID_PHB_SPELL_MAGE_HAND" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="1" checksum="471aa73f" registered="ID_PHB_SPELL_ILLUSORY_SCRIPT" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="2" checksum="3962ef99" registered="ID_PHB_SPELL_SLEEP" />
-						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="3" checksum="134ad7fb" registered="ID_PHB_SPELL_FEATHER_FALL" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="3" checksum="134ad7fb" registered="ID_PHB_SPELL_HEALING_WORD" />
 						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="4" checksum="c5927ed5" registered="ID_PHB_SPELL_UNSEEN_SERVANT" />
 						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
 						<element type="Grants" name="Multiclass Spellcasting Slots Full" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
@@ -225,6 +228,7 @@ Borad (Ursine Witcher)]]></allies>
 				<element type="Grants" name="Multiclassing (Level 7)" id="ID_INTERNAL_MULTICLASS_LEVEL_7" />
 			</element>
 			<element type="Level" name="8" id="ID_LEVEL_8" />
+			<element type="Level" name="9" id="ID_LEVEL_9" />
 		</elements>
 		<defenses>
 			<conditional>Base AC = 18 (Equipped Glamoured Std. Leather Armor +3)
@@ -295,14 +299,6 @@ Borad (Ursine Witcher)]]></allies>
 Damage. 1d4 piercing 
 
 Proficiency with a dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it.</notes>
-				</details>
-			</item>
-			<item identifier="873f1141-3d31-4fe5-9cf3-0119b56d3c7f" name="Rapier" id="ID_WOTC_PHB_WEAPON_RAPIER">
-				<details card="true">
-					<name>
-					</name>
-					<notes>
-					</notes>
 				</details>
 			</item>
 			<item identifier="806d8052-9664-4891-aefa-dd3e2eda0581" name="Studded Leather" id="ID_WOTC_ARMOR_LIGHT_STUDDED_LEATHER">
@@ -478,8 +474,16 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 					<notes>A parchment with the deed to the tavern in Gryphon. - Stolen from a merchant on the side of the road.</notes>
 				</details>
 			</item>
+			<item identifier="47a46b4c-c486-4621-9f16-616f57929d65" name="Cook’s Utensils" id="ID_WOTC_PHB_ITEM_TOOL_COOKS_UTENSILS">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
 		</equipment>
-		<sum element-count="112">
+		<sum element-count="115">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -527,13 +531,15 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
 			<element type="Spell" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" />
 			<element type="Spell" id="ID_PHB_SPELL_SLEEP" />
-			<element type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+			<element type="Spell" id="ID_PHB_SPELL_HEALING_WORD" />
+			<element type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
+			<element type="Level" id="ID_LEVEL_8" />
+			<element type="Level" id="ID_LEVEL_9" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_SCIMITAR" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_STUDDED_LEATHER" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_ARMOR_3" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_RING_OF_PROTECTION" />
-			<element type="Level" id="ID_LEVEL_8" />
-			<element type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
+			<element type="Feat" id="ID_PHB_FEAT_LUCKY" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -582,6 +588,7 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_ROGUE" />
 			<element type="Class Feature" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND" />
 			<element type="Class Feature" id="ID_EXPERTISE_SKILL_PERSUASION" />
+			<element type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_FEAT_8_ROGUE" />
 			<element type="Multiclass" id="ID_WOTC_PHB_MULTICLASS_BARD" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" />
 			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
@@ -594,14 +601,14 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
 		</sum>
 		<magic multiclass="true" level="1">
-			<spellcasting name="Bard" ability="Charisma" attack="8" dc="16" source="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
+			<spellcasting name="Bard" ability="Charisma" attack="9" dc="17" source="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
 				<slots s1="2" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
 				<cantrips>
 					<spell name="Mage Hand" level="0" id="ID_PHB_SPELL_MAGE_HAND" />
 					<spell name="Minor Illusion" level="0" id="ID_PHB_SPELL_MINOR_ILLUSION" />
 				</cantrips>
 				<spells>
-					<spell name="Feather Fall" level="1" id="ID_PHB_SPELL_FEATHER_FALL" known="true" />
+					<spell name="Healing Word" level="1" id="ID_PHB_SPELL_HEALING_WORD" known="true" />
 					<spell name="Illusory Script" level="1" id="ID_PHB_SPELL_ILLUSORY_SCRIPT" known="true" />
 					<spell name="Sleep" level="1" id="ID_PHB_SPELL_SLEEP" known="true" />
 					<spell name="Unseen Servant" level="1" id="ID_PHB_SPELL_UNSEEN_SERVANT" known="true" />
