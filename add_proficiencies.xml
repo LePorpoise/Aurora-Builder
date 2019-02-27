@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Add Proficiencies</name>
+        <description>5e homebrew</description>
+        <author>LePorpoise</author>
+        <update version="0.0.1">
+            <file name="add_profciencies.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/add_proficiencies.xml" />
+        </update>
+    </info>
+
+    <element name="Add Proficiencies" type="Option" source="LePorpoise" id="ID_BREW_ADD_PROFICIENCIES">
+        <description>
+            <p>Used to add proficiencies earned throughout the campaign manually.</p>
+        </description>
+        <rules>
+          <select type="Proficiency" name="Add Proficiencies" level="1" supports="Skill, Proficiency" number="20"/>
+        </rules>
+    </element>
+
+</elements>
