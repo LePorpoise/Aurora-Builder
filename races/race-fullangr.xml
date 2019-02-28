@@ -31,60 +31,63 @@
                     <span class="feature">Alignment.</span>Fullangrs can be any alignment, but whatever alignment they are they shall do it with greatest effort. <br />
                     <span class="feature">Size.</span>Medium. As a Medium creature, a fullangr has no special bonuses or penalties due to its size. <br />
                     <span class="feature">Speed.</span>Fullangr base land speed is 20 feet. However, fullangr can move at this speed even when wearing medium or heavy armor or when carrying a medium or heavy load (unlike other creatures, whose speed is reduced in such situations).<br />
+                    <span class="feature">Darkvision</span> A fullangr can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and a fullangr can function just fine with no light at all. <br />
                     <span class="feature">Giantblooded.</span>A fullangr counts as a giant as well as a member of its actual type. <br />
                     <span class="feature">Item Toss.</span>A fullangr can throw any item as if it were a ranged throwing weapon with a ranged increment of 10 ft (or +10 ft range if already a throwing weapon). They are considered proficient in "rocks" and may throw rocks (about the size of a basketball to a beach ball) which deal 1d10 bludgeoning damage. <br />
                     <span class="feature">Oversized Grip.</span>A fullangr has big hands for extreme weapon holding. It may use two-handed weapons one-handed. Combined with Powerful Build this allows them to wield a Large Greatsword in one hand, or a Huge Greatsword in two hands at a -2 penalty. <br />
                     <span class="feature">Powerful Build.</span>The physical stature of fullangrs lets them function in many ways as if they were one size category larger. Whenever a fullangr is subject to a size modifier or special size modifier for an opposed check (such as during grapple checks, bull rush attempts, and trip attempts), the fullangr is treated as one size larger if doing so is advantageous to him. An fullangr is also considered to be one size larger when determining whether a creature’s special attacks based on size (such as improved grab or swallow whole) can affect him. A fullangr can use weapons designed for a creature one size larger without penalty. However, his space and reach remain those of a creature of his actual size. The benefits of this racial trait stack with the effects of powers, abilities, and spells that change the subject’s size category. <br />
                     <span class="feature">Stability.</span>A fullangr gains a +4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground). <br />
-                    <span class="feature">Magical Soil.</span>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.<br />
-                    <span class="feature">Languages.</span>Sentient dirt can understand all languages but can't speak or read.<br />
+                    <span class="feature">Weapon Familiarity.</span>Fullangr treat weapons with "dwarven" in their name (such as the Dwarven Waraxes) as martial weapons.<br />
+                    <span class="feature">Languages.</span>Common, Dwarven, Giant and one choice from Draconic, Goblin, Gnoll, Gnome, Orc, Terran, or Undercommon.<br />
                 </p>
         </description>
         <setters>
-            <set name="names" type="male">None</set>
-            <set name="names" type="female">None</set>
+            <set name="names" type="male">Hack Blowfist</set>
+            <set name="names" type="female">Slab Squat-Thrust</set>
             <set name="names-format">$(name)</set>
-            <set name="height" modifier="1d4">1'2"</set>
-            <set name="weight" modifier="(none)">17</set>
+            <set name="height" modifier="1d4">6'2"</set>
+            <set name="weight" modifier="(none)">360</set>
         </setters>
-        <sheet display="false">
-            <description>"Through out history there has been something that we have always known, that thing is dirt, it has contributed to our survival but it is something we usually forget even exists." -A Wise Man </description>
-        </sheet>
         <rules>
-            <stat name="Constitution" value="5" />
-            <select type="Ability Score Improvement" name="Fullangr" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_INTELLIGENCE" />
-            <grant type="Size" id="ID_SIZE_SMALL" />
-            <stat name="Speed" value="0" bonus="base" />
+            <stat name="Constitution" value="4" />
+            <stat name="Strength" value="2" />
+            <select type="Ability Score Improvement" name="Fullangr" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_STRENGTH" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="Speed" value="20" bonus="base" />
         </rules>
     </element>
-    <element name="Fullangr has no eyes or ears" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_FULLANGR_HAS_NO_EYES_OR_EARS">
+
+    <element name="Giantblooded" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_GIANTBLOODED">
         <sheet>
-            <description>You are blind and deaf, you have disadvantage on any check that is related to sight or hearing.</description>
+            <description>A fullangr counts as a giant as well as a member of its actual race.</description>
         </sheet>
     </element>
-    <element name="Magical Fullangrelepathy" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_MAGICAL_FULLANGRELEPATHY">
+    <element name="Item Toss" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_ITEM_TOSS">
         <sheet>
-            <description>You can telepathically communicate with any creature with an Intelligence above 3 that knows at least 1 language within 100 ft of you.</description>
+            <description>A fullangr can throw any item as if it were a ranged throwing weapon with a ranged increment of 10 ft (or +10 ft range if already a throwing weapon). They are considered proficient in "rocks" and may throw rocks (about the size of a basketball to a beach ball) which deal 1d10 bludgeoning damage.</description>
         </sheet>
     </element>
-    <element name="Damage Immunity" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_DAMAGE_IMMUNITY">
+    <element name="Oversized Grip" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_OVERSIZED_GRIP">
         <sheet>
-            <description>You are immune to lightning damage.</description>
+            <description>A fullangr has big hands for extreme weapon holding. It may use two-handed weapons one-handed. Combined with Powerful Build this allows them to wield a Large Greatsword in one hand, or a Huge Greatsword in two hands at a -2 penalty.</description>
         </sheet>
     </element>
-    <element name="Connection to the ground" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_CONNECTION_TO_GROUND">
+    <element name="Powerful Build" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_POWERFUL_BUILD">
         <sheet>
-            <description>You have a deep connection with the ground allowing you to know where anything that is in contact with the ground within 100ft of you is.</description>
+            <description>The physical stature of fullangrs lets them function in many ways as if they were one size category larger. Whenever a fullangr is subject to a size modifier or special size modifier for an opposed check (such as during grapple checks, bull rush attempts, and trip attempts), the fullangr is treated as one size larger if doing so is advantageous to him. An fullangr is also considered to be one size larger when determining whether a creature’s special attacks based on size (such as improved grab or swallow whole) can affect him. A fullangr can use weapons designed for a creature one size larger without penalty. However, his space and reach remain those of a creature of his actual size. The benefits of this racial trait stack with the effects of powers, abilities, and spells that change the subject’s size category. </description>
         </sheet>
     </element>
-    <element name="Fullangr has no limbs" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_HAS_NO_LIMBS">
+    <element name="Stability" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_STABILITY">
         <sheet>
-            <description>You can't hold anything unless some one else sticks it in you, but you still can't move that object by yourself.</description>
+            <description>A fullangr gains a +4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground). </description>
         </sheet>
     </element>
-    <element name="Magical Soil" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_HAS_NO_LIMBS">
+    <element name="Fulangr Skill" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_SKILL_PROFICIENCY">
         <sheet>
-            <description>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.</description>
+            <description>Fullangr like to bring their talents to the extreme. Choose one skill besides Use Magic Device. They gain this skill as a class skill, with a +2 racial bonus. </description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Fullangr Skill (Proficiency)" number="1" supports="!ID_PROFICIENCY_SKILL_ARCANA"/>
+        </rules>
     </element>
 </elements>
