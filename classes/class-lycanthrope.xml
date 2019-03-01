@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Lycanthrope</name>
+    <description>The Lycanthrope (Variant) class from the Dungeons and Dragons Wiki.</description>
+    <author url="https://www.dandwiki.com/wiki/Lycanthrope_(5e_Class)">D&amp;D Wiki</author>
+    <update version="0.1">
+      <file name="class-lycanthrope.xml" url="https://github.com/LePorpoise/Aurora-Builder/blob/master/classes/class-lycanthrope.xml" />
+    </update>
+  </info>
+
+  <element name="Lycanthrope" type="Class" source="D&amp;D Wiki" id="ID_WIKI_CLASS_LYCAN">
+    <description>
+      <h5>QUICK BUILD</h5>
+      <p>You can make a Lycanthrope quickly by following these suggestions. First choose Strength to be your highest ability score, followed by Constitution, then Wisdom as a close third. Then choose the Outlander background. Third, choose A spear, Longbow with a Quiver and 30 Arrows, and An Explorer's Pack </p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a Lycanthrope you gain the following class features. </p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d12 per level<br />
+        <span class="emphasis">Hit Points at 1st Level:</span>1d12 + your Constitution modifier<br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d12 (or 7) + your Constitution modifier per level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>Light Armor<br />
+        <span class="emphasis">Weapons:</span>Simple weapons, Martial weapons<br />
+        <span class="emphasis">Tools:</span>Herbalism Kit<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Strength, Constitution<br />
+        <span class="emphasis">Skills:</span>Choose 2 from the following: Animal Handling, Athletics, Intimidation, Nature, Perception, Stealth, and Survival <br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li><i>(a)</i> a Simple weapon or <i>(b)</i> a Shortsword</li>
+        <li><i>(a)</i> a Longbow with a Quiver and 20 Arrows or <i>(b)</i> a Heavy Crossbow with a Boltcase and 20 Bolts or <i>(c)</i> a Martial Weapon</li>
+        <li><i>(a)</i> a Dungeoneer’s pack or <i>(b)</i> an Explorer’s pack</li>
+        <li>a Herbalism kit</li>
+      </ul>
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_UNARMORED_AGILITY" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_FIGHTING_STYLE" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_BITE_ATTACKS" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_MULTIATTACK" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_ASI" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_UNCONTROLLABLE_URGES" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_EXTRA_ATTACK" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WILDS_LEAP" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_CLAWS" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_KEEN_SENSES" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WOLVES_CALLING" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WERE_STRENGTH" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_HIDE" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_EASIER_BURDEN" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_CURSED_DEFENSE" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_STRONGER_BOND" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_QUICK_TRANSFORMATION" />
+      <div element="ID_WIKI_CLASS_FEATURE_LYCAN_ALPHA_WOLF" />
+    </description>
+    <sheet display="false">
+      <description>A person that can assume the aspect of a horrifying wolven beast that can fight enemies.</description>
+    </sheet>
+    <setters>
+      <set name="short">A person that can assume the aspect of a horrifying wolven beast that can fight enemies.</set>
+      <set name="hd">d12</set>
+    </setters>
+    <rules>
+
+      <!-- <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+      <grant type="Grants" name="ID_INTERNAL_GRANTS_AVERAGE_HP_D10" /> -->
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+
+      <select type="Proficiency" name="Skill Proficiency (Lycanthrope)" supports="Skill, Barbarian" number="2" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+     
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNARMORED_AGILITY" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS" level="1" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_FIGHTING_STYLE" level="2" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_BITE_ATTACKS" level="2" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_MULTIATTACK" level="3" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_ASI" level="4" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNCONTROLLABLE_URGES" level="4" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_ASI" level="4" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WILDS_LEAP" level="5" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_CLAWS" level="6" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_KEEN_SENSES" level="7" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WOLVES_CALLING" level="7" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WERE_STRENGTH" level="8" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_HIDE" level="9" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_EASIER_BURDEN" level="11" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_CURSED_DEFENSE" level="12" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_STRONGER_BOND" level="13" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_QUICK_TRANSFORMATION" level="15" />
+      <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_ALPHA_WOLF" level="20" />  
+
+    <!-- WEREWOLF FORM STATS (ACTIVE)-->
+      <stat name="AC" value="13, Dexterity Modifier" bonus="base" />
+      <stat name="Speed" value="60" bonus="base" />
+      <stat name="Strength" value="8" bonus="base" />
+      <stat name="Dexterity" value="8" bonus="base" />
+      <stat name="Stealth" value="2" />
+      <stat name="Darkvision" value="80" bonus="base" inline="true" />
+
+    </rules>
+    <multiclass id="ID_WIKI_MULTICLASS_LYCAN">
+      <prerequisite>Strength 13 and Constitution 13</prerequisite>
+      <requirements>([str:13],[con:13])</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, simple weapons, martial weapons</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      </rules>
+    </multiclass>
+  </element>
+
+
+  <element name="Unarmored Agility" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNARMORED_AGILITY">
+    <description>
+      <p>Gaining 1st level, you are naturally defensive, thanks to your Lycanthrope abilities. You gain +1 AC when you take the dodge action and your AC equals 10 + your Dexterity modifier + your Constitution modifier in your humanoid form.</p>
+    </description>
+    <sheet> 
+        <description>You gain +1 AC when you take the dodge action and your AC equals 10 + your Dexterity modifier + your Constitution modifier in your humanoid form.</description>
+    </sheet>
+  </element>
+
+  <element name="Werewolf Transformation" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION">
+    <description>
+      <p>From 1st level on, you can use your given abilities to turn into a werewolf as an action a number of times as shown in the Werewolf Transformation chart in the classes table. You stay transformed for 10 minutes per Werewolf level, unless you choose to end it early as a bonus action. You also revert your human form when you drop to 0 hitpoints. You will have Your armor and equipment meld into you when you transform, becoming useless for the duration. You regain all transformations after a long rest. By level 3 you regain one use of transformations after a short rest back. Transforming takes your full turn to do after you dedicate your action to doing so. In Werewolf form, you cannot take long rests, you may take short rests however. </p>
+    </description>
+    <sheet> 
+        <description>You can use your given abilities to turn into a werewolf as an action. </description>
+    </sheet>
+  </element>
+
+  <element name="Claw Attacks" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS">
+    <description>
+      <p>While in werewolf form, unarmed strikes are empowered. The damage dice for Claw attack are- at Level 1: 1d6, Level 5:1d8, Level 11: 2d8, Level 17: 3d8, and at Level 20: 3d12.</p>
+    </description>
+    <sheet> 
+        <description>The damage dice for Claw attack are- at Level 1: 1d6, Level 5: 1d8, Level 11: 2d8, Level 17: 3d8, and at Level 20: 3d12.</description>
+    </sheet>
+  </element>
+
+  <element name="Bite Attacks" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_BITE_ATTACKS">
+    <description>
+      <p>At 2nd level, your fangs grow stronger and your bloodlust rises. As an action, you can bite one enemy in your reach of 5 feet. This attack roll modifier is your proficiency modifier + your Strength modifier. The attack deals 1d6 + your Strength modifier piercing damage. The damage die is 1d8 at 5th level. The damage die is 2d6 at 11th level and 3d8 by 17th level. Also, the creature is grappled by you, if you choose and if it fails the saving throw with a DC of 8 + Proficiency modifier + your Strength. If you bite someone they have to roll a con save of DC 12+ Wisdom modifier or contract the Lycanthrope disease.</p>
+    </description>
+    <sheet> 
+        <description>As an action, you can bite one enemy in your reach of 5 feet. This attack roll modifier is your proficiency modifier + your Strength modifier. The attack deals 1d6 + your Strength modifier piercing damage. The damage die is 1d8 at 5th level. The damage die is 2d6 at 11th level and 3d8 by 17th level. Also, the creature is grappled by you, if you choose and if it fails the saving throw with a DC of 8 + Proficiency modifier + your Strength. If you bite someone they have to roll a Con save of DC 12+ Wisdom modifier or contract the Lycanthrope disease.</description>
+    </sheet>
+  </element>
+
+  <element name="Fighting Style" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_FIGHTING_STYLE">
+    <description>
+      <p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+      <h5>ARCHERY</h5>
+      <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+      <h5>DUELING</h5>
+      <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+      <h5>GREAT WEAPON FIGHTING</h5>
+      <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+      <h5>DUAL WEAPON FIGHTING</h5>
+      <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This does not apply to the unarmed strikes of your werewolf form.</p>
+    </description>
+    <rules>
+      <select type="Class Feature" supports="Fighting Style, Lycanthrope" level="2"/>
+    </rules>
+  </element>
+
+  <element name="Multiattack" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_MULTIATTACK">
+    <description>
+      <p>When you reach 3rd level, you now can make a Multiattack in your Lycanthrope form. When you take this action you can make one unarmed strike and one Bite Attack.</p>
+    </description>
+    <sheet> 
+        <description>When you reach 3rd level, you now can make a Multiattack in your Lycanthrope form. When you take this action you can make one unarmed strike and one Bite Attack.</description>
+    </sheet>
+  </element>
+
+  <element name="Ability Score Improvement (Lycanthrope)" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_ASI">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_LYCAN" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_LYCAN" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_LYCAN" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_LYCAN" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_LYCAN" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Lycanthrope 4)" supports="Improvement Option,Lycanthrope,4" default="ID_INTERNAL_CLASS_FEATURE_ASI_4_LYCAN" level="4" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Lycanthrope 8)" supports="Improvement Option,Lycanthrope,8" default="ID_INTERNAL_CLASS_FEATURE_ASI_8_LYCAN" level="8" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Lycanthrope 12)" supports="Improvement Option,Lycanthrope,12" default="ID_INTERNAL_CLASS_FEATURE_ASI_12_LYCAN" level="12" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Lycanthrope 16)" supports="Improvement Option,Lycanthrope,16" default="ID_INTERNAL_CLASS_FEATURE_ASI_16_LYCAN" level="16" requirements=""/>
+      <select type="Class Feature" name="Improvement Option (Lycanthrope 19)" supports="Improvement Option,Lycanthrope,19" default="ID_INTERNAL_CLASS_FEATURE_ASI_19_LYCAN" level="19" requirements=""/>
+    </rules>
+  </element>
+
+  <element name="Uncontrollable Urges" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNCONTROLLABLE_URGES">
+    <description>
+      <p>By the 4th level, you are at your strongest when someone forces you to act. When your hit point drops below 1/4 of your max hit points rounded down, you can use your reaction to gain extra damage to all melee attacks you make. The extra damage equals Half your Level + half your strength modifier  and it lasts for entire combat. You also receive half damage of all damage types with the exception of silvered weapons. You need to take a long rest before you can use this feature again. Only be used in Lycanthrope form.</p>
+    </description>
+    <sheet> 
+        <description>When your hit point drops below 1/4 of your max hit points rounded down, you can use your reaction to gain extra damage to all melee attacks you make. The extra damage equals Half your Level + half your strength modifier  and it lasts for entire combat. You also receive half damage of all damage types with the exception of silvered weapons. You need to take a long rest before you can use this feature again. Only be used in Lycanthrope form.</description>
+    </sheet>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_EXTRA_ATTACK">
+    <description>
+      <p>Beginning at level 5, you can attack twice in human form, whenever you take the attack action. And twice in Lycanthrope form.</p>
+    </description>
+    <sheet> 
+        <description>Beginning at level 5, you can attack twice in human form, whenever you take the attack action. And twice in Lycanthrope form.</description>
+    </sheet>
+  </element>
+
+  <element name="Wild's Leap" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WILDS_LEAP">
+    <description>
+      <p>At 5th level, you can leap in a straight line for third of your movement and pounce on a target which is smaller than you or jump on a target which is same in size or bigger than you. You also can jump on objects and terrain. You can use this in Lycanthrope form.</p>
+    </description>
+    <sheet> 
+        <description>You can leap in a straight line for third of your movement and pounce on a target which is smaller than you or jump on a target which is same in size or bigger than you. You also can jump on objects and terrain. You can use this in Lycanthrope form.</description>
+    </sheet>
+  </element>
+  
+  <element name="Werewolf Claws" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_CLAWS">
+    <description>
+      <p>From 6th level on, your attacks as a Lycanthrope count as magical for the sake of overcoming resistances.</p>
+    </description>
+    <sheet> 
+        <description>From 6th level on, your attacks as a Lycanthrope count as magical for the sake of overcoming resistances.</description>
+    </sheet>
+  </element>
+
+  <element name="Keen Senses" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_KEEN_SENSES">
+    <description>
+      <p>When you reach 7th level, you gain advantage in Perception(Wisdom) checks in Lycanthrope form.</p>
+    </description>
+    <sheet> 
+        <description>You gain advantage in Perception(Wisdom) checks in Lycanthrope form.</description>
+    </sheet>
+  </element>
+
+  <element name="Wolves' Calling" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WOLVES_CALLING">
+    <description>
+      <p>From level 7 on, the wolves you are bound to are assisting you when you need them. You can summon 1d3 wolves. This skill can only be used when you are fighting in a open area. Such as forest or mountain. You can only control the wolf to attack the unit you want or have it leave. Can only be used once per long rest. Upgrades to Direwolves at Level 15.</p>
+    </description>
+    <sheet> 
+        <description>You can summon 1d3 wolves. This skill can only be used when you are fighting in a open area. Such as forest or mountain. You can only control the wolf to attack the unit you want or have it leave. Can only be used once per long rest. Upgrades to Direwolves at Level 15.</description>
+    </sheet>
+  </element>
+
+  <element name="Were-Strength" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WERE_STRENGTH">
+    <description>
+      <p>At 8th level, you gain +1 on attack and damage rolls to all melee attacks while you are in Lycanthrope Form.</p>
+    </description>
+    <sheet> 
+        <description>You gain +1 on attack rolls to all melee attacks while you are in Lycanthrope Form.</description>
+    </sheet>
+  </element>
+
+  <element name="Werewolf Hide" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_HIDE">
+    <description>
+      <p>When you reach 9th level, your fur becomes resistant to bludgeoning, piercing, and slashing damage as a Lycanthrope.</p>
+    </description>
+    <sheet> 
+        <description>Your fur is resistant to bludgeoning, piercing, and slashing damage as a Lycanthrope.</description>
+    </sheet>
+    <rules>
+        <grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+        <grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+        <grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+    </rules>
+  </element>
+
+  <element name="Easier Burden" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_EASIER_BURDEN">
+    <description>
+      <p>From 11th level on, you can transform into a Lycan as a bonus action instead of an action, but if you want you can turn as an action.</p>
+    </description>
+    <sheet> 
+        <description>You can transform into a Lycan as a bonus action instead of an action, but if you want you can turn as an action.</description>
+    </sheet>
+  </element>
+
+  <element name="Cursed Defense" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_CURSED_DEFENSE">
+    <description>
+      <p>From 12th level on, Should the damage from the attack be deadly and would have instantaneously killed you, you can use your reaction to turn back into humanoid form and get unconscious and you get two level of exhaustion. You can't use this feature again until you have no level of exhaustion left and you can't turn into a Lycan again until you take a long rest.</p>
+    </description>
+    <sheet> 
+        <description>Should the damage from the attack be deadly and would have instantaneously killed you, you can use your reaction to turn back into humanoid form and get unconscious and you get two level of exhaustion. You can't use this feature again until you have no level of exhaustion left and you can't turn into a Lycan again until you take a long rest.</description>
+    </sheet>
+  </element>
+  
+  <element name="Stronger Bond" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_STRONGER_BOND">
+    <description>
+      <p>At the 13th level, you gain the ability to roar and frighten a group of up to 3 enemies must pass a Wisdom saving throw of DC 14.</p>
+    </description>
+    <sheet> 
+        <description>You gain the ability to roar and frighten a group of up to 3 enemies must pass a Wisdom saving throw of DC 14.</description>
+    </sheet>
+  </element>
+
+  <element name="Quick Transformation" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_QUICK_TRANSFORMATION">
+    <description>
+      <p>With reaching 15th level, you can transform instantaneously on your turn, but your movement is still a third in this round. Your AC is your Lycanthrope form's AC this round..</p>
+    </description>
+    <sheet> 
+        <description>You can transform instantaneously on your turn, but your movement is still a third in this round. Your AC is your Lycanthrope form's AC this round.</description>
+    </sheet>
+  </element>
+
+  <element name="Alpha Wolf" type="Class Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_LYCAN_ALPHA_WOLF">
+    <description>
+      <p>At Level 20, on all Attack rolls you roll an additional damage die in Humanoid form and Lycanthrope form. All Enemy Saving throws add a DC +3(enemies rolling this not you rolling this). Critical Hits in Lycanthrope form are 18, 19, and 20.</p>
+    </description>
+    <sheet> 
+        <description>On all Attack rolls you roll an additional damage die in Humanoid form and Lycanthrope form. All Enemy Saving throws add a DC +3. Critical Hits in Lycanthrope form are now 18, 19, and 20. </description>
+    </sheet>
+  </element>
+
+</elements>
