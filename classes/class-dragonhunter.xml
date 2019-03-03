@@ -321,6 +321,9 @@
     <sheet>
       <description>Once per long rest, if a creature misses an attack, you may cast Hellish Rebuke at a level equal to or below your Charisma modifier.</description>
     </sheet>
+    <rules>
+      <select type="Spell" name="Defender's Dogma (Trait)" supports="Hellish Rebuke, Spell" number="1" />
+    </rules>
   </element>
 
   <element name="Zealot's Aggression" type="Archetype Feature" source="D&amp;D Wiki" id="ID_WIKI_CLASS_FEATURE_MANEUVER_ZEALOTS_AGGRESSION">
