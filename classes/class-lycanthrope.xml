@@ -110,7 +110,6 @@
       <stat name="Strength" value="8" bonus="base" />
       <stat name="Dexterity" value="8" bonus="base" />
       <stat name="Darkvision" value="80" bonus="base" inline="true" />
-      <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
 
     </rules>
     <multiclass id="ID_WIKI_MULTICLASS_LYCAN">
