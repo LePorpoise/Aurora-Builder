@@ -81,7 +81,8 @@
       <grant type="Proficiency" name="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
 
       <select type="Proficiency" name="Skill Proficiency (Lycanthrope)" supports="Skill, Barbarian" number="2" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
-     
+      <select type="Proficiency" name="Tool Proficiency (Lycanthrope)" supports="Tool, Kit" number="1" requirements="!ID_WIKI_MULTICLASS_LYCAN" />
+
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNARMORED_AGILITY" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION" level="1" />
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS" level="1" />

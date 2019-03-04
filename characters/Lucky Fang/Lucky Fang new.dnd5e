@@ -23,23 +23,20 @@
 			<name>Lucky Fang</name>
 			<gender>Male</gender>
 			<player-name>Scott</player-name>
-			<experience>48000</experience>
+			<experience>55000</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
-				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="+3 vs AC" damage="1d6 + 3 slashing" displayed="true">
+				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="Slashing" damage="1d6 +1d8 +Dex. +Prof." displayed="true">
 					<description><![CDATA[Finesse, Light]]></description>
 				</attack>
 				<attack identifier="" name="Dagger" range="5 feet" attack="Piercing" damage="1d4 +Dex. +Prof." displayed="true">
 					<description><![CDATA[Finesse, Light, Thrown 20/60 feet]]></description>
 				</attack>
-				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="+7 vs AC" damage="1d8 + 3 slashing" displayed="true">
+				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="Slashing" damage="1d10 +2 +Str. +Prof." displayed="true">
 					<description><![CDATA[Versitile]]></description>
 				</attack>
 				<attack identifier="" name="Unarmed Strike (Tabaxi)" range="5 feet" attack="Slashing" damage="1d4 +Str. +Prof." displayed="true">
 					<description><![CDATA[]]></description>
-				</attack>
-				<attack identifier="" name="Rapier" range="5 feet" attack="1d8 +6" damage="Piercing" displayed="false">
-					<description><![CDATA[Finesse]]></description>
 				</attack>
 			</attacks>
 			<backstory><![CDATA[You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You’re far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society.]]></backstory>
@@ -83,7 +80,7 @@ Borad (Ursine Witcher)]]></allies>
 			<skin>Amber Fur</skin>
 			<hair>Short</hair>
 		</appearance>
-		<abilities available-points="15">
+		<abilities available-points="-9">
 			<strength>13</strength>
 			<dexterity>14</dexterity>
 			<constitution>12</constitution>
@@ -535,11 +532,11 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" />
 			<element type="Level" id="ID_LEVEL_8" />
 			<element type="Level" id="ID_LEVEL_9" />
+			<element type="Feat" id="ID_PHB_FEAT_LUCKY" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_SCIMITAR" />
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_STUDDED_LEATHER" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_ARMOR_3" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_RING_OF_PROTECTION" />
-			<element type="Feat" id="ID_PHB_FEAT_LUCKY" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
