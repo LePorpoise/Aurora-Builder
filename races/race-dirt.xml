@@ -51,6 +51,13 @@
             <description>"Through out history there has been something that we have always known, that thing is dirt, it has contributed to our survival but it is something we usually forget even exists." -A Wise Man </description>
         </sheet>
         <rules>
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_DIRT_DIRT_HAS_NO_EYES_OR_EARS" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_DIRT_MAGICAL_DIRTELEPATHY" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_DIRT_DAMAGE_IMMUNITY" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_DIRT_CONNECTION_TO_GROUND" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_DIRT_HAS_NO_LIMBS" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_MAGICAL_SOIL" />
+
             <stat name="Constitution" value="5" />
             <select type="Ability Score Improvement" name="Dirt" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_INTELLIGENCE" />
             <grant type="Size" id="ID_SIZE_SMALL" />
@@ -82,7 +89,7 @@
             <description>You can't hold anything unless some one else sticks it in you, but you still can't move that object by yourself.</description>
         </sheet>
     </element>
-    <element name="Magical Soil" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_DIRT_HAS_NO_LIMBS">
+    <element name="Magical Soil" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_RACIAL_TRAIT_MAGICAL_SOIL">
         <sheet>
             <description>Having Insane magical potential in you allows you to cast spells without needing to use verbal and somatic components, but you do still need material components.</description>
         </sheet>
