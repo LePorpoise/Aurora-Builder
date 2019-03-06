@@ -111,8 +111,8 @@
       <stat name="Strength" value="8" bonus="base" />
       <stat name="Dexterity" value="8" bonus="base" />
       <stat name="Darkvision" value="80" bonus="base" inline="true" />
-
     </rules>
+
     <multiclass id="ID_WIKI_MULTICLASS_LYCAN">
       <prerequisite>Strength 13 and Constitution 13</prerequisite>
       <requirements>([str:13],[con:13])</requirements>
@@ -178,7 +178,7 @@
       <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. This does not apply to the unarmed strikes of your werewolf form.</p>
     </description>
     <rules>
-      <select type="Class Feature" supports="Fighting Style, Lycanthrope" level="2"/>
+      <select type="Class Feature" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" level="2"/>
     </rules>
   </element>
 
