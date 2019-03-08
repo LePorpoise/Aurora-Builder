@@ -49,6 +49,13 @@
             <set name="weight" modifier="(none)">360</set>
         </setters>
         <rules>
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_GIANTBLOODED" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_ITEM_TOSS" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_OVERSIZED_GRIP" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_POWERFUL_BUILD" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_FULLANGR_STABILITY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+
             <stat name="Constitution" value="4" />
             <stat name="Strength" value="2" />
             <select type="Ability Score Improvement" name="Fullangr" supports="ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_STRENGTH" />
