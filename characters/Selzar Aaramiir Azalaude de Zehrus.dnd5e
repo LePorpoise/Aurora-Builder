@@ -216,7 +216,7 @@ I live for the thrill of the hunt.</background-traits>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_COS_BACKGROUND_HAUNTED_ONE">
 					<element type="Proficiency" name="Skill Proficiency (Haunted One)" requiredLevel="1" number="1" checksum="30603ee4" registered="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 					<element type="Proficiency" name="Skill Proficiency (Haunted One)" requiredLevel="1" number="2" checksum="a9696f5e" registered="ID_PROFICIENCY_SKILL_RELIGION" />
-					<element type="Language" name="Language (Haunted One)" requiredLevel="1" checksum="2bd623ac" registered="ID_LANGUAGE_ABYSSAL" />
+					<element type="Language" name="Language (Haunted One)" requiredLevel="1" checksum="2bd623ac" registered="ID_LANGUAGE_SYLVAN" />
 					<element type="List" name="Personality Trait" requiredLevel="1" number="1" checksum="1c96d3a2" isList="true" registered="1">I don’t run from evil. Evil runs from me.</element>
 					<element type="List" name="Personality Trait" requiredLevel="1" number="2" checksum="859f8218" isList="true" registered="4">I live for the thrill of the hunt.</element>
 					<element type="List" name="Ideal" requiredLevel="1" checksum="8e3a4863" isList="true" registered="5">I like to know my enemy’s capabilities and weaknesses before rushing into battle. (Lawful)</element>
@@ -359,7 +359,7 @@ Dexterity- 12 (+1)</conditional>
 			<element type="Background Feature" id="ID_COS_BACKGROUND_HAUNTED_ONE_HEART_OF_DARKNESS" />
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
-			<element type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<element type="Language" id="ID_LANGUAGE_SYLVAN" />
 			<element type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL" />
 			<element type="Deity" id="ID_WOTC_PHB_DEITY_MALAR" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_LONGBOW" />

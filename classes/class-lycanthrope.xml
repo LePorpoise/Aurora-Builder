@@ -106,7 +106,7 @@
       <grant type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_ALPHA_WOLF" level="20" />  
 
     <!-- WEREWOLF FORM STATS (ACTIVE)-->
-      <stat name="AC" value="13" bonus="base" />
+      <stat name="AC" value="7" bonus="base" />
       <stat name="Speed" value="60" bonus="base" />
       <stat name="Strength" value="8" bonus="base" />
       <stat name="Dexterity" value="8" bonus="base" />
