@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<character version="1.19.130" preview="true">
-	<!-- generated using the Aurora Builder for 5th edition http://www.dndbuilder.net -->
+<character version="1.19.304" preview="true">
+	<!-- generated using the Aurora Builder - http://www.dndbuilder.net -->
+	<!-- information -->
+	<information>
+		<group>My Characters</group>
+	</information>
 	<!-- display data -->
 	<display-properties favorite="true">
 		<name>Lucky Fang</name>
@@ -26,16 +30,16 @@
 			<experience>55000</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
-				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="Slashing" damage="1d6 +1d8 +Dex. +Prof." displayed="true">
+				<attack identifier="8cd8e78a-9414-4c51-9927-668628da9e8a" name="Ursine Cutlass of the Witcher" range="5 ft" attack="Slashing" damage="1d6 +1d8 +Dex. +Prof." displayed="true" ability="">
 					<description><![CDATA[Finesse, Light]]></description>
 				</attack>
-				<attack identifier="" name="Dagger" range="5 feet" attack="Piercing" damage="1d4 +Dex. +Prof." displayed="true">
+				<attack identifier="" name="Dagger" range="5 feet" attack="Piercing" damage="1d4 +Dex. +Prof." displayed="true" ability="Strength">
 					<description><![CDATA[Finesse, Light, Thrown 20/60 feet]]></description>
 				</attack>
-				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="Slashing" damage="1d10 +2 +Str. +Prof." displayed="true">
+				<attack identifier="cffd45db-0d91-4d49-a205-ec5b706cc711" name="Longsword +2" range="5 ft" attack="Slashing" damage="1d10 +2 +Str. +Prof." displayed="true" ability="">
 					<description><![CDATA[Versitile]]></description>
 				</attack>
-				<attack identifier="" name="Unarmed Strike (Tabaxi)" range="5 feet" attack="Slashing" damage="1d4 +Str. +Prof." displayed="true">
+				<attack identifier="" name="Unarmed Strike (Tabaxi)" range="5 feet" attack="Slashing" damage="1d4 +Str. +Prof." displayed="true" ability="Strength">
 					<description><![CDATA[]]></description>
 				</attack>
 			</attacks>
@@ -88,7 +92,7 @@ Borad (Ursine Witcher)]]></allies>
 			<wisdom>14</wisdom>
 			<charisma>17</charisma>
 		</abilities>
-		<elements level-count="9" registered-count="46">
+		<elements level-count="9" registered-count="47">
 			<element type="Option" name="Average Hit Points" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -480,7 +484,7 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="115">
+		<sum element-count="116">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -537,6 +541,7 @@ Placing a bag of holding inside an extradimensional space created by a handy hav
 			<element type="Armor" id="ID_WOTC_ARMOR_LIGHT_STUDDED_LEATHER" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_ARMOR_3" />
 			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_RING_OF_PROTECTION" />
+			<element type="Magic Item" id="ID_WOTC_XGTE_MAGIC_ITEM_CHARLATANS_DIE" />
 			<element type="Class" id="ID_WOTC_PHB_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
