@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<character version="1.19.304" preview="true">
+<character version="1.19.309" preview="true">
 	<!-- generated using the Aurora Builder - http://www.dndbuilder.net -->
 	<!-- information -->
 	<information>
@@ -13,7 +13,7 @@
 		<archetype>
 		</archetype>
 		<background>Haunted One</background>
-		<level>1</level>
+		<level>5</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -26,18 +26,22 @@
 		<input>
 			<name>Selzar Aaramiir Azalaude de Zehrus</name>
 			<gender>Male</gender>
-			<player-name>Player 1</player-name>
-			<experience>0</experience>
+			<player-name>Scott</player-name>
+			<experience>6500</experience>
 			<attacks>
-				<description><![CDATA[]]></description>
-				<attack identifier="" name="Werewolf Claws" range="5 ft" attack="Slashing" damage="1d6 +Str." displayed="true" ability="Strength">
-					<description><![CDATA[Unarmed Strike]]></description>
-				</attack>
-				<attack identifier="" name="Handaxe" range="5 ft" attack="Slashing" damage="1d6 +Str. +Prof." displayed="true" ability="Strength">
-					<description><![CDATA[Light, Thrown 20/60]]></description>
-				</attack>
-				<attack identifier="" name="Longbow" range="150/600 ft" attack="Piercing" damage="1d8 +Dex. +Prof." displayed="true" ability="Strength">
+				<description><![CDATA[Uncontrollable Urges: Activates at 1/4 Health
+Melee Damage +5
+
+Melee Brute:
+You have mastered a fighting style and take the most damage in melee, when you hit you deal an additional 2d4 damage. This increases by 1d4 at 5th, 9th, 13th, and 17th level. You also gain 4 hit points per hit dice. ]]></description>
+				<attack identifier="" name="Longbow +1" range="150/600 ft" attack="Piercing" damage="1d8 +1 +Dex. +Prof." displayed="true">
 					<description><![CDATA[Ammunition, Heavy, Two-Handed]]></description>
+				</attack>
+				<attack identifier="" name="Werewolf Claws" range="5 ft" attack="Slashing" damage="1d8 +Str. +Prof. (x2 Attacks / Action)" displayed="true">
+					<description><![CDATA[Unarmed Strike, Light]]></description>
+				</attack>
+				<attack identifier="" name="Werewolf Bite" range="5 ft." attack="Piercing" damage="1d8 +Str. +Prof." displayed="true">
+					<description><![CDATA[Unarmed Strike, Lycan Disease DC 12 +Wis.]]></description>
 				</attack>
 			</attacks>
 			<backstory><![CDATA[You get the following benefits in your werewolf form:
@@ -87,9 +91,9 @@ I live for the thrill of the hunt.</background-traits>
 			<additional-features><![CDATA[You are haunted by something so terrible that you dare not speak of it. You’ve tried to bury it and flee from it to no avail. This thing that haunts you can’t be slain with a sword or banished with a spell. It might come to you as a shadow on the wall, a bloodcurdling nightmare, a memory that refuses to die, or a demonic whisper in the dark. The burden has taken its toll, isolating you from others and making you question your sanity. You must find a way to overcome it before it destroys you.]]></additional-features>
 			<currency>
 				<copper>0</copper>
-				<silver>0</silver>
-				<electrum>0</electrum>
-				<gold>0</gold>
+				<silver>105</silver>
+				<electrum>99</electrum>
+				<gold>243</gold>
 				<platinum>0</platinum>
 				<equipment><![CDATA[]]></equipment>
 				<treasure><![CDATA[]]></treasure>
@@ -104,15 +108,15 @@ I live for the thrill of the hunt.</background-traits>
 			<skin>Crimson</skin>
 			<hair>Black</hair>
 		</appearance>
-		<abilities available-points="-1">
+		<abilities available-points="-10">
 			<strength>10</strength>
 			<dexterity>8</dexterity>
 			<constitution>17</constitution>
 			<intelligence>10</intelligence>
-			<wisdom>6</wisdom>
+			<wisdom>15</wisdom>
 			<charisma>16</charisma>
 		</abilities>
-		<elements level-count="1" registered-count="19">
+		<elements level-count="5" registered-count="26">
 			<element type="Option" name="Average Hit Points" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
@@ -212,6 +216,19 @@ I live for the thrill of the hunt.</background-traits>
 					<element type="Class Feature" name="Werewolf Transformation" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION" />
 					<element type="Class Feature" name="Claw Attacks" id="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS" />
 					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
+					<element type="Class Feature" name="Fighting Style" id="ID_WIKI_CLASS_FEATURE_LYCAN_FIGHTING_STYLE">
+						<element type="Class Feature" name="Class Feature (Fighting Style)" requiredLevel="2" checksum="906c71a7" registered="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY" />
+					</element>
+					<element type="Class Feature" name="Bite Attacks" id="ID_WIKI_CLASS_FEATURE_LYCAN_BITE_ATTACKS" />
+					<element type="Class Feature" name="Multiattack" id="ID_WIKI_CLASS_FEATURE_LYCAN_MULTIATTACK" />
+					<element type="Class Feature" name="Ability Score Improvement (Lycanthrope)" id="ID_WIKI_CLASS_FEATURE_LYCAN_ASI">
+						<element type="Class Feature" name="Improvement Option (Lycanthrope 4)" requiredLevel="4" checksum="5614b5df" registered="ID_INTERNAL_CLASS_FEATURE_FEAT_4_LYCANTHROPE">
+							<element type="Feat" name="Feat (LYCANTHROPE 4)" requiredLevel="4" checksum="0353be8f" registered="" />
+						</element>
+					</element>
+					<element type="Class Feature" name="Uncontrollable Urges" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNCONTROLLABLE_URGES" />
+					<element type="Class Feature" name="Extra Attack" id="ID_WIKI_CLASS_FEATURE_LYCAN_EXTRA_ATTACK" />
+					<element type="Class Feature" name="Wild's Leap" id="ID_WIKI_CLASS_FEATURE_LYCAN_WILDS_LEAP" />
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_COS_BACKGROUND_HAUNTED_ONE">
 					<element type="Proficiency" name="Skill Proficiency (Haunted One)" requiredLevel="1" number="1" checksum="30603ee4" registered="ID_PROFICIENCY_SKILL_INVESTIGATION" />
@@ -232,6 +249,10 @@ I live for the thrill of the hunt.</background-traits>
 				<element type="Grants" name="Dexterity Modifier" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_DEXTERITY_MODIFIER" />
 				<element type="Grants" name="Constitution Modifier" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
 			</element>
+			<element type="Level" name="2" id="ID_LEVEL_2" />
+			<element type="Level" name="3" id="ID_LEVEL_3" />
+			<element type="Level" name="4" id="ID_LEVEL_4" />
+			<element type="Level" name="5" id="ID_LEVEL_5" />
 		</elements>
 		<defenses>
 			<conditional>Human Stats:
@@ -280,8 +301,11 @@ Dexterity- 12 (+1)</conditional>
 			</portrait>
 		</companion>
 		<equipment>
-			<item identifier="c42fc5ad-bf7f-47f7-8c70-0533f6333995" name="Longbow" id="ID_WOTC_PHB_WEAPON_LONGBOW">
+			<item identifier="d4127f32-10bc-4d8f-a622-2d4e064044be" name="Longbow" id="ID_WOTC_PHB_WEAPON_LONGBOW">
 				<equipped location="Two-Handed">true</equipped>
+				<items>
+					<adorner name="Weapon, +1" id="ID_WOTC_DMG_MAGIC_ITEM_WEAPON_1" />
+				</items>
 				<details card="true">
 					<name>
 					</name>
@@ -289,7 +313,7 @@ Dexterity- 12 (+1)</conditional>
 					</notes>
 				</details>
 			</item>
-			<item identifier="f114e69b-276b-4d53-9961-f022e200bf6a" name="Handaxe" id="ID_WOTC_PHB_WEAPON_HANDAXE">
+			<item identifier="a7ff020f-3660-48c5-93db-d9788bdff2e2" name="Arrow" id="ID_WOTC_PHB_ITEM_ARROW" amount="22">
 				<details card="true">
 					<name>
 					</name>
@@ -297,10 +321,9 @@ Dexterity- 12 (+1)</conditional>
 					</notes>
 				</details>
 			</item>
-			<item identifier="a7ff020f-3660-48c5-93db-d9788bdff2e2" name="Arrow" id="ID_WOTC_PHB_ITEM_ARROW" amount="20">
+			<item identifier="88c851bd-a111-41d9-ab4d-733fd34e436b" name="Blowgun Needle" id="ID_WOTC_PHB_ITEM_BLOWGUNNEEDLE" amount="2">
 				<details card="true">
-					<name>
-					</name>
+					<name>Lightning Arrow</name>
 					<notes>
 					</notes>
 				</details>
@@ -329,8 +352,31 @@ Dexterity- 12 (+1)</conditional>
 					</notes>
 				</details>
 			</item>
+			<item identifier="5941ed95-fbfe-490c-9ec6-6f3cbfe5529b" name="Oil (flask)" id="ID_WOTC_PHB_ITEM_OIL_FLASK" amount="3">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="ade452c1-9346-4349-ac76-758c4e8993fa" name="Sealing Wax" id="ID_WOTC_PHB_ITEM_SEALINGWAX">
+				<details card="true">
+					<name>Flaming Red Gemstone</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="4ff8ae33-16e7-4513-90fe-d874dabb93f4" name="Vial" id="ID_WOTC_PHB_ITEM_VIAL" amount="9">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
 		</equipment>
-		<sum element-count="100">
+		<sum element-count="114">
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_AVERAGE_HP" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
@@ -362,7 +408,12 @@ Dexterity- 12 (+1)</conditional>
 			<element type="Language" id="ID_LANGUAGE_SYLVAN" />
 			<element type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL" />
 			<element type="Deity" id="ID_WOTC_PHB_DEITY_MALAR" />
+			<element type="Level" id="ID_LEVEL_2" />
+			<element type="Level" id="ID_LEVEL_3" />
 			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_LONGBOW" />
+			<element type="Magic Item" id="ID_WOTC_DMG_MAGIC_ITEM_WEAPON_1" />
+			<element type="Level" id="ID_LEVEL_4" />
+			<element type="Level" id="ID_LEVEL_5" />
 			<element type="Class" id="ID_WIKI_CLASS_LYCAN" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -431,6 +482,15 @@ Dexterity- 12 (+1)</conditional>
 			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WEREWOLF_TRANSFORMATION" />
 			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_CLAW_ATTACKS" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_FIGHTING_STYLE" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_BITE_ATTACKS" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_MULTIATTACK" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_ASI" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_UNCONTROLLABLE_URGES" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_EXTRA_ATTACK" />
+			<element type="Class Feature" id="ID_WIKI_CLASS_FEATURE_LYCAN_WILDS_LEAP" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY" />
+			<element type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_FEAT_4_LYCANTHROPE" />
 		</sum>
 		<magic />
 	</build>
